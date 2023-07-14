@@ -25,6 +25,9 @@
 %%
 % \documentclass{<something>} must begin each LaTeX document
 \documentclass[12pt,twoside]{templates/facsothesis}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
 % Packages are extensions to the basic LaTeX functions. Whatever you
 % want to typeset, there is probably a package out there for it.
 % Chemistry (chemtex), screenplays, you name it.
@@ -54,6 +57,9 @@
             citecolor = blue,
             anchorcolor = blue]{hyperref}
 \usepackage{lmodern}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]{\normalfont\bfseries}{}{0pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-50pt}{40pt}
 \usepackage{float}
 \floatplacement{figure}{H}
 % End of CII addition
@@ -182,7 +188,7 @@ $endfor$
 %
 \let\chaptername\relax
 \begin{document}
-\bibliographystyle{apalike}
+\bibliographystyle{apa-good}
 % Everything below added by CII
 $if(title)$
   \maketitle
@@ -233,6 +239,7 @@ $if(dedication)$
 $endif$
 
 \mainmatter % here the regular arabic numbering starts
+\titleformat{\chapter}{\normalfont\Huge\bfseries}{\thechapter}{1em}{}
 \pagestyle{fancyplain} % turns page numbering back on
 
 $body$

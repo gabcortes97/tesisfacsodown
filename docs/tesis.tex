@@ -25,6 +25,9 @@
 %%
 % \documentclass{<something>} must begin each LaTeX document
 \documentclass[12pt,twoside]{templates/facsothesis}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
 % Packages are extensions to the basic LaTeX functions. Whatever you
 % want to typeset, there is probably a package out there for it.
 % Chemistry (chemtex), screenplays, you name it.
@@ -54,6 +57,9 @@
             citecolor = blue,
             anchorcolor = blue]{hyperref}
 \usepackage{lmodern}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]{\normalfont\bfseries}{}{0pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-50pt}{40pt}
 \usepackage{float}
 \floatplacement{figure}{H}
 % End of CII addition
@@ -90,56 +96,16 @@
 % \usepackage{times} % other fonts are available like times, bookman, charter, palatino
 
 % Syntax highlighting #22
-  \usepackage{color}
-  \usepackage{fancyvrb}
-  \newcommand{\VerbBar}{|}
-  \newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-  \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-  % Add ',fontsize=\small' for more characters per line
-  \usepackage{framed}
-  \definecolor{shadecolor}{RGB}{248,248,248}
-  \newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-  \newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-  \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-  \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-  \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-  \newcommand{\BuiltInTok}[1]{#1}
-  \newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-  \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-  \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-  \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-  \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-  \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-  \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-  \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-  \newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-  \newcommand{\ExtensionTok}[1]{#1}
-  \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-  \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-  \newcommand{\ImportTok}[1]{#1}
-  \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-  \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-  \newcommand{\NormalTok}[1]{#1}
-  \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-  \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-  \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-  \newcommand{\RegionMarkerTok}[1]{#1}
-  \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-  \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-  \newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-  \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-  \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-  \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 
 % To pass between YAML and LaTeX the dollar signs are added by CII
-\title{Título completo de la tesis o seminario de grado}
-\author{Mi nombre}
+\title{PERFILES DE INDIVIDUALISMO Y SU RELACIÓN CON EL APOYO A LA DEMOCRACIA DELEGATIVA EN LA SOCIEDAD CHILENA}
+\author{GABRIEL CORTÉS PAREDES}
 % The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
-\date{Fecha}
+\date{Santiago de Chile, 2023}
 \division{}
-\advisor{Profesor/a guía: mi supervisor/a}
-\institution{Universidad de Chile}
-\degree{Seminario / Memoria / Tesis de Grado - Carrera de Sociología}
+\advisor{Profesora guía: Macarena Orchard}
+\institution{FACULTAD DE CIENCIAS SOCIALES E HISTORIA}
+\degree{Tesis para optar al grado de magíster en Métodos para la Investigación Social}
 %If you have two advisors for some reason, you can use the following
 % Uncommented out by CII
 % End of CII addition
@@ -194,6 +160,20 @@
 
 }
 
+	\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
 % End of CII addition
 %%
 %% End Preamble
@@ -201,7 +181,7 @@
 %
 \let\chaptername\relax
 \begin{document}
-\bibliographystyle{apalike}
+\bibliographystyle{apa-good}
 % Everything below added by CII
   \maketitle
 
@@ -224,13 +204,20 @@
 
 
 \mainmatter % here the regular arabic numbering starts
+\titleformat{\chapter}{\normalfont\Huge\bfseries}{\thechapter}{1em}{}
 \pagestyle{fancyplain} % turns page numbering back on
+
+\hypertarget{prefacio}{%
+\chapter*{Prefacio}\label{prefacio}}
+\addcontentsline{toc}{chapter}{Prefacio}
+
+\emph{``A toast, Jedebiah, to love on my terms. Those are the only terms anybody ever knows -- his own''} (Orson Welles, 1941)
+
+\emph{``If success and failure are the result of individual effort, those at the top can hardly be blamed -- unless, of course, they are politician''} (Bellah et al, 1996, p.xv)
 
 \hypertarget{resumen}{%
 \chapter*{Resumen}\label{resumen}}
 \addcontentsline{toc}{chapter}{Resumen}
-
-Resumen aquí
 
 \hypertarget{agradecimientos}{%
 \chapter*{Agradecimientos}\label{agradecimientos}}
@@ -238,295 +225,153 @@ Resumen aquí
 
 Agradecimientos aquí.
 
-\hypertarget{introducciuxf3n-tesisfacsodown}{%
-\chapter{Introducción: tesisfacsodown}\label{introducciuxf3n-tesisfacsodown}}
+\hypertarget{antecedentes}{%
+\chapter{Antecedentes}\label{antecedentes}}
 
-Tesisfacsodown es básicamente una propuesta o plantilla para poder escribir un trabajo final formateado en alta calidad, con opción tanto para pdf como para html. Para ello, basta con escribir el trabajo en un lenguaje de estructura simple: \textbf{markdown} (detalles mś adelante), el que luego es transformado a un documento formateado en pdf tal como se puede ver \href{docs/tesis.pdf}{aquí}, y si se desea también en html de manera simultanea. Es decir, se trata de concentrarse en escribir y el trabajo de formateo se lo dejamos a un tercero, que en este caso es la librería \texttt{bookdown} de R \citep{xie_Bookdown_2017} .
+Si bien se ha observado que el apoyo a la democracia en Chile ha sido históricamente alto \citep{navia2019}, se debe notar con atención algunos síntomas que indican una caída en este soporte, particularmente durante este último año \citep{cep}, acompañada de un fortalecimiento de la imagen pública de Augusto Pinochet y su dictadura \citep{cadem2023, cerc-mori}, así como de los últimos resultados electorales que han sido favorables para José Antonio Kast y su Partido Republicano, quienes han defendido abiertamente el legado del régimen militar y que han sido descritos como populistas radicales de derecha \citep{diaz2023}.
 
-\begin{figure}
+Esto se da, además, en el contexto de un crisis de representatividad que se ha profundizado durante la última década, pero cuyos orígenes se pueden retrotraer incluso hacia fines de los años 90, en los primeros años de la transición democrática chilena tras el fin de la Dictadura Militar en 1990 \citep{luna2016}. Este período de la historia chilena fue tempranamente considerado como exitoso, debido a su rápida consolidación institucional y económica, particularmente en comparación a procesos similares en otros países de América Latina.
 
-{\centering \includegraphics[width=1\linewidth]{images/flujobookdown} 
+En el resto de la región, por el contrario, se observaban dificultades en los procesos de consolidación de los nuevos regímenes, que fueron descritos por Guillermo O'Donnell \citeyearpar{odonnell1994} bajo el concepto de \emph{democracia delegativa}. Esta variante de democracia se caracterizaría por la presencia de un presidente que es invetido de un liderazgo fuerte que le permite pasar por sobre el control de otras instituciones del Estado con el fin de sanar y unir a la nación. En otros palabras, una democracia delegativa cuenta con una fuerte responsabilidad vertical (o \emph{vertical accountability}), es decir, hacia el pueblo o los ciudadanos, pero no hacia otros poderes o instituciones (\emph{horizontal accouintability}) \citep{odonnell1994}.
 
-}
+Esta descripción, por cierto, no se acomoda a la realidad chilena. Tampoco, sin embargo, se podría decir que Chile es plenamente una democracia delegativa donde convivan ambas formas de rendición de cuentas. Por el contrario, lo que se observa es que la contundencia del control horizontal entre instituciones es acompañada por un profundo desarraigo entre las élites políticas y la ciudadanía \citep{luna2016}.
 
-\caption{Flujo tesisfacsodown}\label{fig:flujo}
-\end{figure}
+En este contexto, si bien Chile no es una democracia delegativa, no sería raro pensar que aparezcan tendencias que apelen a una mayor rendición de cuentas vertical, incluso a expensas de debilitar las instituciones de control horizontal, respaldando así soluciones autoritarias o no-democráticas \citep{carlin2018}
 
-Junto con realizar el trabajo de formato, quienes realizan análisis de datos con R tienen la posibilidad de incluir también los resultados (tablas, gráficos) de manera dinámica. Esto quiere decir que los análisis se realizan en el mismo documento, que se actualiza automáticamente en caso de modificaciones evitando así la ineficiencia de estar cortando y pegando cada vez que se realiza un cambio.
+Por supuesto, la disminución del apoyo a la democracia y el surgimiento de opciones autoritarias o populistas no es un fenómeno únicamente local, y ha sido estudiado ampliamente en varias regiones del mundo bajo diversas etiquetas, tales como \emph{liderazgos fuertes, no-democráticos o delegativos} \citep{carlin2011, carlin2018, crimston2022, kang2018, lima2021, selvanathan2022, xuereb2021}, \emph{populismos} \citep{baro2022, gidron2020, nowakowski2021}, o \emph{derecha populista radical} \citep{diaz2023, donovan2019, donovan2021}. También se ha puesto esfuerzos en identificar sus determinantes, entre los que se pueden contar factores culturales \citep{lima2021, marchlewska2022, selvanathan2022}; factores económicos objetivos y subjetivos \citep{arikan2019, rico2020, wu2019, xuereb2021}; bajo bienestar o estatus subjetivo \citep{gidron2020, nowakowski2021}; sentimientos de anomia y de polarización moral \citep{crimston2022}; la pertenencia a una minoría étnica o religiosa con baja integración nacional \citep{eskelinen2020}; así como otros rasgos o valores personales \citep{baro2022, marchlewska2019, rico2020}.
 
-Tesisfacsodown está basada en otros proyectos similares como \href{https://github.com/ismayc/thesisdown}{\texttt{tesisdown}} y también \href{https://github.com/ulyngs/oxforddown}{\texttt{oxforddown}}.
+Como se puede notar, pese a que el espectro Individualismo-Colectivismo se considera una de las más importantes y más estudiadas dimensiones de la cultura \citep{binder2019, fatehi2020}, y que ha sido utilizado como variable explicativa en diversos estudios sobre economía \citep{binder2019, kyriacou2016, germani2021, toikko2020}, capital social \citep{beilmann2018}; género \citep{dabiriyantehrani2022, davis2019}, familia \citep{al-hassan2021, rudy2006}, trabajo \citep{refslund2022, solis2018, stewart2020}, cumplimiento de normas \citep{varet2018, zhang2020}, y actitudes frente a la pandemia y la vacunación \citep{card2022}, su conexión con las preferencias políticas y el respaldo hacia distintos modelos de democracia aún ha sido escasamente explorada.
 
-\textbf{¿Cómo funciona?}
+La literatura existente se ha preocupado más bien de explorar la relación entre individualismo, colectivismo y autoritarismo. Al respecto, se ha descrito que entre estudiantes universitarios estadounidenses la relación entre individualismo y colectivismo es en realidad ortogonal, ubicando al primero en el polo opuesto del autoritarismo \citep{gelfand1996}. En una serie de estudios comparativos en varios países, por otro lado, se ha complejizado esa relación, encontrando una relación positiva entre autoritarismo e individualismo vertical -- que privilegia la competencia y jerarquía entre individuos - pero no con el individualismo horizontal, que privilegia la competencia y la igualdad entre individuos \citep{kemmelmeier2003}. Se ha observado, además, que el individualismo vertical está asociado con orientaciones de dominancia social \citep{strunk1999} y con el voto conservador en los Estados Unidos \citep{zhang2009}. También se ha explorado la relación entre individualismo, colectivismo y autoritatismo a nivel familiar, encontrando que madres colectivistas apoyan un estilo más autoritario de parentalidad \citep{rudy2006}. Por otro lado, se ha argumentado que culturales individualistas promueven una mejor gobernanza, desincentivando la corrupción, el nepotismo y el clientelismo \citep{kyriacou2016}.
 
-\emph{En breve}: haciendo una copia de la carpeta \emph{tesisfacsodown}, completando / reemplazando los contenidos en los archivos separados según secciones del documento (introducción, antecedentes, etc), y luego se utiliza el programa o librería \texttt{bookdown}, que funciona en el entorno R y que produce los documentos formateados en pdf y/o html. No es necesario saber R para poder utilizar tesisfacsodown, pero si estar dispuesto a aprender un par de cosas.
+Estos estudios comparten limitaciones, como su escasez y dispersión en el tiempo, su carácter exploratorio, o el circunscribir las definiciones de individualismo y colectivismo a un nivel cultural, sin detenerse a analizar las posibles difracciones dentro de una misma sociedad. Además, ninguna de estas investigaciones ha explorado estos fenómenos en Chile o en América Latina. Tampoco parece haberse explorado la relación con el apoyo a una democracia delegativa que, si bien contiene rasgos autoritarios e iliberales, parece ser un fenómeno diferente \citep{carlin2011, carlin2018}. De tal modo, se buscará abordar esa brecvha incluyendo un giro en la conceptualización de individualismo, que busca dejar de entenderlo como una dimensión cultural para pasar a definirlo como el resultado de procesos sociohistóricos de individualización que difieren no solo entre culturas, sino también dentro de una misma sociedad \citep{martuccelli2018, silvapalacios2015}.
 
-\hypertarget{requisitos}{%
-\section{Requisitos}\label{requisitos}}
+La individualización es una corriente sociohistórica que transforma las relaciones de los sujetos con la autoridad, así como los soportes y las modalidades que autorizan su ejercicio \citep{araujo2021}. Por ello, parece interesante indagar cómo diferentes variantes de individualismo --resultado de difracciones de los procesos de individualización -- se relacionan con la pérdida de legitimidad de modalidades democráticas de autoridad, privilegiando, por ejemplo, liderazgos más fuertes, eficientes \citep{araujo2022, araujo2022a}, o auténticos \citep{gauthier2021}.
 
-\begin{itemize}
-\item
-  Software: R/RStudio (ambos gratuitos).
-\item
-  librerías de R: \texttt{bookdown}, se instala desde RStudio en el menú Tools \textgreater{} Install packages \textgreater{} bookdown. Si se maneja R es más directo ejecutar desde la consola \texttt{install.packages("bookdown")}
-\item
-  Escritura: conocimiento de \emph{Markdown}, que es básicamente escribir simplemente texto con muy pocas marcas de edición (como encabezados, cursivas, negritas). Estas marcas de edición luego son interpretadas para poder generar documentos formateados en pdf, html (web) y también word. No requiere gran conocimiento previo, una introducción breve se puede encontrar \href{https://juancarloscastillo.github.io/in-socabi/lenguaje-reproducible.html}{aquí}.
-\item
-  No se requiere conocimiento de análisis de datos con R. Si bien este formato facilita la inclusión de resultados de análisis cuantitativos, puede ser perfectamente usado para trabajos con otras metodologías.
-\item
-  Si además de pdf se quiere publicar en formato web (es opcional) se necesitan conocimientos básicos de Git y Github. Una breve introducción se puede ver \href{https://cienciasocialabierta.netlify.app/class/08-class/}{aquí}, y con mucho mayor detalle en \url{https://happygitwithr.com/}.
-\end{itemize}
+En visto de todo lo planteado, se propone como pregunta de investigación la siguiente: \textbf{¿Cuál es la relación entre distintos perfiles de individualismo y el apoyo a una democracia delegativa en la sociedad chilena?}
 
-\hypertarget{pasos}{%
-\section{Pasos}\label{pasos}}
-
-El primer paso consiste es obtener la carpeta de ejemplo \textbf{tesisfacsodown}, luego reemplazar algunos contenidos y obtener el documento formateado mediante un simple click en RStudio. Existen dos formas:
+Lo que se traduce al objetivo general de \textbf{Establecer la relación entre distintos perfiles de individualismo y el apoyo a una democracia delegativa en la sociedad chilena}. A sus vez, de aquí se desprenden los siguientes objetivos específicos:
 
 \begin{itemize}
 \tightlist
 \item
-  simplemente bajar la carpeta desde \href{}{aquí}
+  Identificar los perfiles de individualismo presentes en la sociedad chilena
 \item
-  para quienes tengan una cuenta en Github, lo más facil es hacer un fork del repositorio \url{https://github.com/juancarloscastillo/tesisfacsodown}, luego clonarlo localmente y comenzar a trabajar desde ahí. Esta opción es la más convieniente si se quiere luego publicar la tesis online (detalles abajo en sección de publicación web).
+  Describir el apoyo a una democracia delegtiva en la sociedad chilena
+\item
+  Relacionar las variantes de individualismo con el apoyo a una democracia delegativa en la sociedad chilena
 \end{itemize}
 
-Una vez que se tiene la carpeta localmente, hacer doble click en el archivo \texttt{tesis.Rproj}, con lo que se abrirá RStudio (tiene que estar instalado previamente, tutorial \href{https://multivariada.netlify.app/class/\#installR}{aquí}). En RStudio hacer click sobre el botón ``build book'':
+\hypertarget{marco-teuxf3rico}{%
+\chapter{Marco Teórico}\label{marco-teuxf3rico}}
 
-\begin{figure}
+\hypertarget{democracia-delegativa}{%
+\section{Democracia delegativa}\label{democracia-delegativa}}
 
-{\centering \includegraphics[width=0.6\linewidth]{images/build_book} 
+El concepto de democracia delegativa fue acuñado por el sociólogo argentino Guillermo O'Donnell para describir la situación institucional de las nuevas democracias latinoamericanas surgidas tras el fin de los regímenes autoritarios en la región durante las décadas de 1980 y 1990. Esta forma de democracia se basa en la premisa de que el ganador de las elecciones presidenciales tiene derecho a gobernar sin restricciones, considerándose la encarnación del país y el principal defensor de sus intereses \citep{odonnell1994}. Se diferencian de las democracias representativas consolidadas en que una fuerte responsabilidad vertical (es decir, frente a sus electores) no es acompañada por una rendición de cuentas horizontal, esto es, hacia otras instituciones del Estado \citep{odonnell1994}.
 
-}
-
-\caption{Generando los documentos en pdf y html}\label{fig:build}
-\end{figure}
-
-Con esto aparecerá en el visor de RStudio (pestaña Viewer) el documento en formato (html) y también se generará el documento tesis.pdf en la carpeta docs, y al que se puede acceder desde el ícono pdf en la barra superior del documento en html. Lo que aparece en los documentos html y pdf es este mismo documento pdf/html que están viendo ahora, pero que ahora se encuentra guardado localmente en sus computadores y que pueden modificar con los contenidos de sus trabajos.
-
-\emph{Detalles}
-
-La carpeta tiene una serie de archivos y subcarpetas. Lo que hace el botón ``build book'' es activar la función \texttt{bookdown} de R que permite convertir el contenido escrito en Markdown hacia html y pdf. Para ello, los contenidos de la carpeta se organizan de la siguiente manera:
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Archivo index.Rmd}: este archivo contiene
-
-  \begin{itemize}
-  \tightlist
-  \item
-    una serie de campos para poder personalizar e identificar la tesis, como título, autor, etc.
-  \item
-    de manera opcional se puede incluir un archivo con referencias bibliográficas .bib en caso de utilizar formato \texttt{bibtex} (que puede ser generado con gestores de referencias como Zotero o Mendeley, mayores detalles revisar \href{https://cienciasocialabierta.netlify.app/class/05-class/}{aquí}.
-  \item
-    también aparecen algunas opciones que tienen que ver con la generación del documento pdf y del sitio que no hay que modificar.
-  \item
-    finalmente, en este archivo también se puede incluir el Resumen / abstract del trabajo.
-  \end{itemize}
-\item
-  \textbf{Secciones del trabajo}: es una propuesta de archivos markdown con extensión .Rmd que comienzan con un número, y es donde se separan las distintas secciones o capítulos. Podría también ser un solo gran archivo con todos los contenidos, pero esta división permite un mayor orden en el trabajo y también separa en distintas páginas web en el caso de publicación en este formato. El orden en que aparecen las secciones en el documento final se indica con un número al inicio del archivo (ej: 01-intro.Rmd). Los archivos de las secciones que aparecen en esta carpeta son solo de ejemplo y pueden ser eliminados / reemplazados de acuerdo a la estructura preferida.
-\end{itemize}
-
-Adicionalmente se encuentran:
-
-\begin{itemize}
-\item
-  \emph{Archivos Readme} (.md y .html): contienen la información que aparece aquí, pueden ser eliminados posteriormente.
-\item
-  \emph{Archivos .yml}: son \_output y \_bookdown, y contienen información para generar los documentos pdf y html, no modificar
-\item
-  \emph{tesis.Rproj}: este es archivo que permite acceder a RStudio desde esta carpeta y activar las funciones necesarias para generar el documento formateado. Por lo tanto, luego de bajar la carpeta hacer doble click en este archivo.
-\item
-  \emph{tesis.bib}: es el archivo que contiene las referencias bibliográficas en formato bibtex, en caso de utilizar esta forma de referenciar. El archivo debe mantenerse con este nombre, de lo contrario no funcionará en el pdf.
-\item
-  \emph{Carpetas}:
-
-  \begin{itemize}
-  \tightlist
-  \item
-    images: para guardar imágenes que luego se puedan llamar desde los documentos. Para poder insertarlas desde los documentos Rmd se requiere dar la ruta a la imagen, por ejemplo: images/mi\_imagen.jpg. Que las imágenes se encuentren en esta carpeta es opcional, solo ayuda al orden de los documentos.
-  \item
-    templates: aquí se encuentran archivos que permiten dar formato a los documentos pdf y html (no modificar ni eliminar)
-  \item
-    docs: carpeta producida automáticamente que contiene los documentos generados y formateados en pdf y/o html.
-  \end{itemize}
-\end{itemize}
-
-\hypertarget{algunos-detalles-adicionales}{%
-\section{Algunos detalles adicionales:}\label{algunos-detalles-adicionales}}
-
-\begin{itemize}
-\item
-  para más opciones de bookdown y detalles en general consultar \url{https://rubenfcasal.github.io/bookdown_intro/} (en español).
-\item
-  el formato del pdf es para ser impreso por los dos lados, por eso incluye algunas páginas en blanco (por ejemplo, la paǵina de atrás de la portada), y también los números de página se van alternando entre izquierda y derecha
-\item
-  Es posible generar una referenciación automática de tablas, imágenes y gráficos; además, se generan los índices respectivos en el formato pdf. Si estos provienen simplemente de archivos externos, se pueden almacenar en la carpeta ``imágenes'' e insertar así:
-\end{itemize}
-
-\begin{verbatim}
-```{r nombre, echo=FALSE, fig.cap="Imagen de ejemplo", fig.align = 'center', out.width = '50%'}
-knitr::include_graphics(path = "images/build_book.png")
-```
-\end{verbatim}
-
-Lo que hay aquí es un trozo o ``chunk'' de código R, que en (R)Markdown se inserta simplemente entre tres acentos invertidos (`````''). Luego hay dos partes: las especificaciones de formato que van entre llaves \{\}, y la instrucción de lo que hay que hacer, en este caso llamar una imagen. Vamos por parte:
-
-\begin{itemize}
-\tightlist
-\item
-  especificaciones de formato:
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \texttt{r} solamente informa que viene código R
-  \item
-    \texttt{nombre}: es el nombre que identifica al chunk, puede ser cualquiera
-  \item
-    \texttt{echo=FALSE}: esto se utiliza para que solo se muestre el resultado sin el código. Si fuera \texttt{TRUE}, entonces aparecería la función que llama la imagen además que la mi\_imagen
-  \item
-    \texttt{fig.cap}: el título de la imagen
-  \item
-    \texttt{fig.align}: alineación de la figura
-  \item
-    \texttt{out.width}: ancho en relación a la página. Hay diferentes formas de especificar las dimensiones, la ventaja de esta es que funciona bien tanto para pdf como para html, por lo que se recomienda
-  \end{itemize}
-\item
-  instrucción o función: aquí se da la ruta a la imagen dentro del paréntesis con \texttt{path=}, y lo que antecede es la función para incluir gráficos de la librería knitr de R. Pero en simple: solo reemplazar el nombre de la imagen
-\end{itemize}
-
-Al incluir este trozo de código el resultado será el siguiente:
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.5\linewidth]{images/facso} 
-
-}
-
-\caption{Imagen de ejemplo}\label{fig:nombre2}
-\end{figure}
-
-Donde la referenciación (caption) tiene el número 1.2, que quiere decir que es la segunda imagen del capítulo 1. En el pdf ahora esta figura aparece en el índice de figuras.
-
-\begin{itemize}
-\tightlist
-\item
-  en el caso de gráficos generados por R, también se insertan dentro de un chunk, por ejemplo
-\end{itemize}
-
-\begin{verbatim}
-```{r echo=FALSE, fig.cap="Gráfico de ejemplo", fig.align = 'center', out.width = '50%'}
-boxplot(Sepal.Length~Species,data=iris,
-        xlab="Species", ylab="Sepal Length", main="Iris Boxplot")
-```
-\end{verbatim}
-
-Y el resultado es este:
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.5\linewidth]{tesis_files/figure-latex/unnamed-chunk-1-1} 
-
-}
-
-\caption{Gráfico de ejemplo}\label{fig:unnamed-chunk-1}
-\end{figure}
-
-\begin{itemize}
-\tightlist
-\item
-  finalmente para las tablas producidas por R, es un poco más difícil si se quiere obtener el documento tanto en html como en pdf (que se genera vía Latex). En este caso, las tablas deben ser producidas en formato markdown, lo que no es muy común todavía en las distintas librerías de R que en genera privilegian o html o latex. La función para producir tablas markdown en R es principalmente \texttt{kable}, de la librería \texttt{knitr}, por ejemplo:
-\end{itemize}
-
-\begin{verbatim}
-```{r tabla, echo=FALSE, caption="tabla de ejemplo", align = 'center'}
-knitr::kable(head(iris), caption = "An example table caption.")
-```
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}\KeywordTok{head}\NormalTok{(iris), }\DataTypeTok{caption =} \StringTok{"Un ejemplo de tabla"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+Bajo esta definición, Chile se ha tendido a tomar como un contraejemplo, destacando la fuerza de sus instituciones democráticas surgidas tras el fin de la Dictadura \citep{odonnell1994, carlin2018}. Sin embargo, y como se ilustra en la tabla 1, en Chile la rendición de cuentas horizontal no es acompañada por una rendición de cuentas vertical, lo que se traduciría en una \emph{Uprooted democracy} marcada por una profunda crisis de representatividad \citep{odonnell1994}.
 
 \begin{table}
 
-\caption{\label{tab:unnamed-chunk-2}Un ejemplo de tabla}
+\caption{\label{tab:unnamed-chunk-2}Comparación variantes democracia}
 \centering
-\begin{tabular}[t]{r|r|r|r|l}
-\hline
-Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
-\hline
-5.1 & 3.5 & 1.4 & 0.2 & setosa\\
-\hline
-4.9 & 3.0 & 1.4 & 0.2 & setosa\\
-\hline
-4.7 & 3.2 & 1.3 & 0.2 & setosa\\
-\hline
-4.6 & 3.1 & 1.5 & 0.2 & setosa\\
-\hline
-5.0 & 3.6 & 1.4 & 0.2 & setosa\\
-\hline
-5.4 & 3.9 & 1.7 & 0.4 & setosa\\
-\hline
-\end{tabular}
+\begin{tabu} to \linewidth {>{\centering}X>{\centering}X>{\centering}X}
+\toprule
+\multicolumn{1}{c}{Tipo de democracia} & \multicolumn{1}{c}{Vertical Accountability} & \multicolumn{1}{c}{Horizontal Accountability}\\
+\midrule
+Democracia Representativa & + & +\\
+Democracia Delegativa & + & -\\
+Democracia Desarraigada & - & +\\
+\bottomrule
+\multicolumn{3}{l}{\rule{0pt}{1em}\textit{Nota.} Tabla basada en O'Donnell (1994) y en Luna (2016)}\\
+\end{tabu}
 \end{table}
+
+Frente a esto, no resulta contradictorio que una democracia caracterizada por su fuerza institucional puedan surgir en la población actitudades de preferencias por este tipo de gobierno \citep{carlin2011, carlin2018}. Según Carlin \citeyearpar{carlin2018}, las personas que apoyan una democracia delegativa en Chile se caracterizan por apoyar a líderes fuertes que unan al país y lo guíen en tiempos de crissi, mostrar orientaciones no-liberales (\emph{iliberals}) hacia los derechos políticos y falta de compromiso hacia los derechos humanos. Sin embargo, y quizás paradójicamente, este perfil sigue prefiriendo la democracia sobre otras formas de gobierno.
+
+Los liderazgos fuertes, de tal manera, se constituyen como una de las dimensiones fundamentales de las democracias delegativas. Subyace aquí la idea de una nación concebida como un ser orgánico, un verdadero Leviatán del que líder es su cabeza, y cuya función es ``sanar la nación uniendo sus fragmentos dispersos en un todo harmonioso'' \citep[pp.60]{odonnell1994}.
+
+De lo anterior, se desprende un segunda característica esencial de esta vrariante de democracia. El líder, para cumplir su cometido, debe saber combinar elementos emocionales y carismáticos con otros altamente técnicos, precisamente bajo la justificación de ``sanar'' la nación \citep{odonnell1994}. Esta impronta tecnocrática mezclada con elementos emocionales no es del todo desconocidas en Chile, como se observaría en el tipo ideal portaliano \citep{araujo2013}, una forma sociohistórica de ejercicio de la autoridad en Chile. Por otro lado, podría también recordar a la discusión sobre el surgimiento de actitudes tecnocráticas y tecnopopulistas en países europeos y su relación, muchas veces contradictoria, con la democracia \citep{chiru2022, ganuza2020, pilet2023}.
+
+\hypertarget{individualismo}{%
+\section{Individualismo}\label{individualismo}}
+
+\hypertarget{individidualismo-colectivismo-como-una-dimensiuxf3n-de-la-cultura}{%
+\subsection{Individidualismo-Colectivismo como una dimensión de la cultura}\label{individidualismo-colectivismo-como-una-dimensiuxf3n-de-la-cultura}}
 
 \begin{itemize}
 \tightlist
 \item
-  nota sobre ubicación de imágenes y tablas en documento pdf (latex): en general se producen problemas en la ubicación, ya que automáticamente se ajustan al lugar disponible más cercano, sea atrás o delante. Si se quiere fijar la posición en el pdf, agregar antes y después del texto \texttt{\textbackslash{}FloarBarrier}, que es un comando latex que no será visible ni en pdf ni en html.
+  La forma más común en que se ha abordado el fenómeno del individualismo viene de la psicología cultural y, particularmente, de la comparación entre culturas.
+\item
+  Se suele conceptualizar, de tal forma, en par junto al colectivismo. Habrían culturas - y la gran mayoría de las veces, culturas es igual a países - individualistas, y otras colectivistas.
+\item
+  Tanto el individualismo como el colectivismo son conceptos de larga tradición intelectual. Con todo, su uso actual tuvo un gran auge a parti de 1980 con los estudios de Hofstede sobre la cultura laboral en trabajadores de 39 países de la empresa IBM: (Oyserman, 2002)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Hofstede definió 4 grandes dimensiones de la cultura: ``distancia de poder'', ``masculinidad'', ``aversión a las incertidumbre'', e ``individualismo''. Está última ha sido la que más atención ha captado. (Brewer, 2007)
+  \item
+    Para Hofstede, Individualismo-Colectivismo, a nivel cultural, conforman los dos polos de un único espectro (Oyserman, 2002). Las sociedades individualistas se caracterizan por lazos poco estrechos entre individuos, y en de cada quien se espera que se haga cargo de si mismo y de su familia inmediata. Sociedades colectivistas, en tanto, se caracterizan porque sus miembros están integrados desde su nacimiento a grupos fuertemente cohesionados, que los protegen a lo largo de su vidas en cambio por lealtad incuestionada (Yoon, 200)
+  \end{itemize}
+\item
+  A pesar de que el propio Hofstede advierte que estas definiciones aplican 1) a un nivel cultural, y no al individual; y 2) son procesos dinámicos en que las culturas pueden transformarse -- estás recomendaciones no siempre han sido seguidas por los investigadores que han retomado está definición (Oyserman, 2002).
+\item
+  Para hacerse cargo del fenómeno a nivel individual se han elaborado conceptualizaciones alternativas: Por ejemplo, la idea del \emph{self-construal}, o la idea de si las personas se conciben a sí mismas de forma independiente o interdependiente de sus grupos. Además, está propuesta se diferencia de la Hofstede en que es un constructo bidimensional. Ahora bien, pese a que se ha insistido que el \emph{self-construal} y el individualismo-colectivismo son fenómenos diferentes, su operacionalización muchas veces se intercepta. Por lo demás, se mantiene una interpretación más o menos explícita que relaciona una concepción independiente con culturas individualistas.
+\item
+  También se ha vuelto popular la conceptualización que distingue dimensiones horizontales y verticales de individualismo y colectivismo. El colectivismo horizontal se caracteriza por la igualdad y la cooperación entre miembros del grupo; el colectivismo vertical valora el deber hacia el grupo en función al lugar en la jerarquía e que su ubique la persona; El individualismo horizontal valora la autonomía y la unicidad; El individualismo vertical, en tanto, valora la competencia, el logro y la jerarquía entre individuos (Méndez, 2008). Pese a que Triandis parece estar pensando en una conceptualización para el fenómeno a nivel cultural (Méndez, 2008), nuevamente suele usarse este tipo de escalas para describir diferencias entre individuos.
+\item
+  De tal modo, el uso de individualismo-colectivismo ha sido criticado por su falta de claridad conceptual, calificandolo como un concepto \emph{catch-all}, que se usa por defecto para explicar diferencias culturales:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Se observa acá una dimensión normativa: El individualismo se ha entendido como una dimensión esencial de la cultura estadounidense. También se ha asociado a la modernidad y al desarrollo (Voronov; Wang). Individualismo, así, suele tener una connotación positiva, mientras que colectivismo una negativa (moemeka2018), sobretodo en Estados Unidos y otros países anglosajones. De ahí que no sea de extrañar que la diferencia de individualismo y colectivismo puedan recordar, por ejemplo, las distinciones sociológicas clásicas entre sociedad moderna y sociedad tradicional; sociedad y comunidad; solidaridad orgánica y solidaridad mecánica.
+  \item
+    La falta claridad conceptual se puede observar en el estudio de Oyserman, quien a través de un análisis de contenido a las escalas más utilizadas, concluye que individualismo puede referirse a has 6 cosas distintas (independencia, logros, competencia, unicidad, autoconocimiento y comunicación directa); mientras que colectivismo a otras 8 (relaciones, pertenencia, deber, armonía, búsqueda de consejos, contextualidad, jerarquía, grupos).
+  \item
+    Brewer va más allá, indicando que en realidad ni siquiera hay verdadera simetría en las formas en que individualismo y colectivismo están operacionalizados: Así, mientras que los ítems para medir el primero suelen referirse a la identida y la agencia de los individuos; el segundo se suele medir como un sistema de valores.
+  \item
+    También se ha puesto atención a la falta de claridad de quiénes son los colectivos del colectivismo, no haciendo una clara distinción entre grupo, colectivo y comunidad.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Moemeka ha planteado que más que hablar de colectivismo se debería hablar de comunalismo. Los colectivos se forman por elección, de ahí que no haya verdadera contradicción entre colectivismo e individualismo. Por ejemplo, sindicatos y otros movimientos sociales serían colectivos que tienen mayor presencia en sociedades individualistas.
+    \item
+      Para Brewer, las escalas analizadas suelen medir relaciones interpersonales, y propone distinguir está dimensión de la colectiva (que lo entiende a grupos enteros, religiosos, étnicos o nacionales)
+    \item
+      Este giro permitiría explicar las ``anomalías'' observadas en estos estudios:
+
+      \begin{itemize}
+      \tightlist
+      \item
+        A veces, los individualistas puede ser tanto o más colectivistas que los colectivistas (Oyserman)
+      \item
+        Muchas veces, los colectivistas actúan de manera individualista (Vornov)
+      \item
+        Chile es un claro ejemplo. El colectivismo en Chile es alto. Más alto que en Corea del Sur, incluso ¿Implica esto que somos una sociedad colectivista? Lo cierto es que los niveles de individualismo en Chile son más altos que en Estados Unidos y que en Noruega.
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
 \end{itemize}
 
-\hypertarget{publicaciuxf3n-web-y-versionamiento}{%
-\section{Publicación web y versionamiento}\label{publicaciuxf3n-web-y-versionamiento}}
+\hypertarget{individualismo-desde-la-sociologuxeda-del-individuo}{%
+\subsection{Individualismo desde la Sociología del Individuo}\label{individualismo-desde-la-sociologuxeda-del-individuo}}
 
-Una de las ventajas del formato html es poder publicarlo en línea para una fácil lectura y seguimiento. Esto puede ocurrir desde las fases iniciales o para el documento final, aumentando las posibilidades de difusión, colaboración y también de obtener revisiones y comentarios. De todas maneras, requiere algunos conocimientos más específicos que se introducen aquí.
+\hypertarget{propuesta-teuxf3rica-una-reconstrucciuxf3n-analuxedtica-del-individualismo}{%
+\subsection{Propuesta teórica: Una reconstrucción analítica del individualismo}\label{propuesta-teuxf3rica-una-reconstrucciuxf3n-analuxedtica-del-individualismo}}
 
-Existen diferentes maneras de generar un sitio web con el documento, pero el más directo es a través de \textbf{Github} y de su opción \emph{githubpages}. Git/Github es una plataforma de versionamiento y colaboración cuyos detalles y posibilidades claramente no alcanzan a ser cubiertos en este espacio, pero si se desea mayor información se puede revisar \href{https://cienciasocialabierta.netlify.app/class/08-class/}{aquí}.
+\hypertarget{legitimidad-de-la-individualidad}{%
+\subsubsection{Legitimidad de la Individualidad}\label{legitimidad-de-la-individualidad}}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Generación de repositorio: para quienes obtuvieron la carpeta partiendo desde Github con un \emph{fork / clone} de tesisfacsodown el repositorio se encuentra listo. En caso de haber bajado/copiado la carpeta manera simple, entonces a) crear un repositorio en Github, b) clonarlo localmente, c) copiar/mover los archivos de la carpeta tesisfacsodown a la carpeta clonada
-\item
-  Subir los cambios al repositorio (push)
-\item
-  Una vez que los archivos ya están en el repositorio Github ir a Settings \textgreater{} Github Pages y dejar de la siguiente manera:
-\end{enumerate}
+\hypertarget{concepciones-y-autoconcepciones-del-individuo}{%
+\subsubsection{Concepciones y autoconcepciones del individuo}\label{concepciones-y-autoconcepciones-del-individuo}}
 
-\begin{figure}
-
-{\centering \includegraphics[width=0.6\linewidth]{images/githubpages} 
-
-}
-
-\caption{Bookdown en Github Pages}\label{fig:githubpages}
-\end{figure}
-
-Luego ``Save'' y se actualiza la página. Al bajar nuevamente a la sección de Github Pages debería aparecer ``Your site is ready to be published at {[}dirección web{]}''. Esa dirección es donde se puede acceder al sitio una vez que pasen algunos minutos.
-
-\hypertarget{antecedentes-conceptuales-y-empuxedricos}{%
-\chapter{Antecedentes conceptuales y empíricos}\label{antecedentes-conceptuales-y-empuxedricos}}
-
-\hypertarget{concepto-principal---explanandum---objeto-de-estudio}{%
-\section{(concepto principal - explanandum - objeto de estudio)}\label{concepto-principal---explanandum---objeto-de-estudio}}
-
-\ldots{}
-
-\hypertarget{factores-asociados-a-objeto-de-estudio}{%
-\section{Factores asociados a objeto de estudio}\label{factores-asociados-a-objeto-de-estudio}}
-
-\hypertarget{factor-1}{%
-\subsection{Factor 1}\label{factor-1}}
-
-Al final de esta sección, enunciar la hipótesis correspondiente
-
-\hypertarget{factor-n}{%
-\subsection{Factor N}\label{factor-n}}
-
-Al final de esta sección, enunciar la hipótesis correspondiente
+\hypertarget{tipos-de-individuaciuxf3n}{%
+\subsubsection{Tipos de individuación}\label{tipos-de-individuaciuxf3n}}
 
 \hypertarget{metodologuxeda}{%
 \chapter{Metodología}\label{metodologuxeda}}
@@ -551,10 +396,6 @@ Al final de esta sección, enunciar la hipótesis correspondiente
 
 \hypertarget{conclusiones}{%
 \chapter{Conclusiones}\label{conclusiones}}
-
-\hypertarget{bibliografuxeda}{%
-\chapter*{Bibliografía}\label{bibliografuxeda}}
-\addcontentsline{toc}{chapter}{Bibliografía}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%% Bibliography                              %%%

@@ -1,27 +1,32 @@
 ---
-title: 'Título completo de la tesis o seminario de grado'
-subtitle: "Tesis para optar al grado de ...."
-author: "Mi nombre"
-date: "Fecha" # o para fecha actual: "`r Sys.Date()`"
-institution: "Universidad de Chile"
-degree: "Seminario / Memoria / Tesis de Grado - Carrera de Sociología"
-advisor: "Profesor/a guía: mi supervisor/a"
+title: 'PERFILES DE INDIVIDUALISMO Y SU RELACIÓN CON EL APOYO A LA DEMOCRACIA DELEGATIVA EN LA SOCIEDAD CHILENA'
+subtitle: 
+author: "GABRIEL CORTÉS PAREDES"
+date: "Santiago de Chile, 2023"
+institution: "FACULTAD DE CIENCIAS SOCIALES E HISTORIA"
+degree: "Tesis para optar al grado de magíster en Métodos para la Investigación Social"
+advisor: "Profesora guía: Macarena Orchard"
 bibliography: [tesis.bib]
-biblio-style: apalike
+biblio-style: apa-good.bst
+cls: apa.cls
 link-citations: yes
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-fontsize: 14pt
+fontsize: 12pt
 lof: True
 lot: True
 
 ---
 
+# Prefacio {-}
+
+*"A toast, Jedebiah, to love on my terms. Those are the only terms anybody ever knows -- his own"* (Orson Welles, 1941)
+
+*"If success and failure are the result of individual effort, those at the top can hardly be blamed -- unless, of course, they are politician"* (Bellah et al, 1996, p.xv)
 
 # Resumen {-}
 
-Resumen  aquí
 
 
 # Agradecimientos {-}

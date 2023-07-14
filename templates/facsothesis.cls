@@ -103,15 +103,16 @@
 % This gives us rules below the headers
 \AtBeginDocument{%
   \fancyhf{}
-  \fancyhead[LE,RO]{\thepage}
 %  \fancyhead[RE]{\slshape \leftmark}
 %  \fancyhead[LO]{\slshape \rightmark}
 %	The above makes your headers in all caps. If you would like different headers, choose one of the following options (be sure to remove the % symbol from both the right and left headers):
 	 \fancyhead[RE]{\slshape \nouppercase \leftmark} % This makes the headers on the RIGHT side pages be italic and use lowercase With Capitals When Specified.
-	\fancyhead[LO]{\slshape \nouppercase \rightmark} % This does the same thing to the LEFT side pages
+	\fancyhead[RO]{\slshape \nouppercase \rightmark} % This does the same thing to the LEFT side pages
+	\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 %	or
 %	\fancyhead[RE]{\scshape \leftmark} % The RIGHT headers will be in small caps.
 %	\fancyhead[LO]{\scshape \rightmark} %  And so will the LEFT headers
+\fancyfoot[C]{\thepage}
   \pagestyle{fancy}
 
 % Psych majors: You do not need the following six lines, as it conflicts with apacite, so comment them out.
@@ -135,7 +136,7 @@
 \let\RToldchapter\chapter
 \renewcommand{\chapter}{\if@openright\RTcleardoublepage
 		    \else\clearpage\fi
-		    \thispagestyle{empty}%
+		    \thispagestyle{plain}%
 		    \global\@topnum\z@
 		    \@afterindentfalse
 		    \secdef\@chapter\@schapter}
@@ -295,20 +296,20 @@
   \setbox0=\hbox{of the Requirements for the Degree}
 
   \begin{center}
-   \includegraphics[scale=0.25]{images/facso.png}
+   \includegraphics[scale=1]{images/udp.png}
     \setcounter{page}{1}
     \null\vfil
     \begin{Large}
     \textbf{\@title}
     \end{Large}
     \vfil
-    \@degree
-    \vfil
     \textbf{\@author}
     \vfil
-    \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
+    \@degree
     \vfil
     \@advisor
+    \vfil
+    \@institution
     \vfil
     \@date
     \vfil

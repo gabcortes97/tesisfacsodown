@@ -1,20 +1,80 @@
+# Marco Teórico
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(out.width="80%", fig.pos = "!ht", out.extra = "")
+## Democracia delegativa
+
+El concepto de democracia delegativa fue acuñado por el sociólogo argentino Guillermo O'Donnell para describir la situación institucional de las nuevas democracias latinoamericanas surgidas tras el fin de los regímenes autoritarios en la región durante las décadas de 1980 y 1990. Esta forma de democracia se basa en la premisa de que el ganador de las elecciones presidenciales tiene derecho a gobernar sin restricciones, considerándose la encarnación del país y el principal defensor de sus intereses [@odonnell1994]. Se diferencian de las democracias representativas consolidadas en que una fuerte responsabilidad vertical (es decir, frente a sus electores) no es acompañada por una rendición de cuentas horizontal, esto es, hacia otras instituciones del Estado [@odonnell1994].
+
+Bajo esta definición, Chile se ha tendido a tomar como un contraejemplo, destacando la fuerza de sus instituciones democráticas surgidas tras el fin de la Dictadura [@odonnell1994;@carlin2018]. Sin embargo, y como se ilustra en la tabla 1, en Chile la rendición de cuentas horizontal no es acompañada por una rendición de cuentas vertical, lo que se traduciría en una *Uprooted democracy* marcada por una profunda crisis de representatividad [@odonnell1994]. 
+
+```{r, echo=F, message=F}
+library(knitr)
+library(dplyr)
+library(kableExtra)
+
+td <- c("Democracia Representativa",
+                          "Democracia Delegativa",
+                          "Democracia Desarraigada")
+
+va <- c("+", "+", "-")
+ha <- c("+", "-", "+")
+
+tab1 <- data.frame(td, va, ha)
+
+tab1 <- tab1 %>% rename("Tipo de democracia"=td,
+                        "Vertical Accountability"= va,
+                        "Horizontal Accountability"= ha)
+
+tab1 %>%
+  kable(
+    format="latex",
+    booktabs= TRUE,
+    escape = FALSE,
+    caption = "Comparación variantes democracia", align = "c") %>%
+  row_spec(row=0, align = "c") %>%
+  kable_styling(full_width = TRUE) %>% 
+  footnote(general_title = "Nota.",
+    general="Tabla basada en O'Donnell (1994) y en Luna (2016)",
+    footnote_as_chunk = T) %>%   
+  kable_classic(full_width = T, html_font = "Helvetica")
+
 ```
 
-# Antecedentes conceptuales y empíricos
+Frente a esto, no resulta contradictorio que una democracia caracterizada por su fuerza institucional puedan surgir en la población actitudades de preferencias por este tipo de gobierno [@carlin2011;@carlin2018]. Según Carlin [-@carlin2018], las personas que apoyan una democracia delegativa en Chile se caracterizan por apoyar a líderes fuertes que unan al país y lo guíen en tiempos de crissi, mostrar orientaciones no-liberales (*iliberals*) hacia los derechos políticos y falta de compromiso hacia los derechos humanos. Sin embargo, y quizás paradójicamente, este perfil sigue prefiriendo la democracia sobre otras formas de gobierno. 
 
-## (concepto principal - explanandum - objeto de estudio)
+Los liderazgos fuertes, de tal manera, se constituyen como una de las dimensiones fundamentales de las democracias delegativas. Subyace aquí la idea de una nación concebida como un ser orgánico, un verdadero Leviatán del que líder es su cabeza, y cuya función es "sanar la nación uniendo sus fragmentos dispersos en un todo harmonioso" [@odonnell1994, pp.60]. 
 
-...
+De lo anterior, se desprende un segunda característica esencial de esta vrariante de democracia. El líder, para cumplir su cometido, debe saber combinar elementos emocionales y carismáticos con otros altamente técnicos, precisamente bajo la justificación de "sanar" la nación [@odonnell1994]. Esta impronta tecnocrática mezclada con elementos emocionales no es del todo desconocidas en Chile, como se observaría en el tipo ideal portaliano [@araujo2013], una forma sociohistórica de ejercicio de la autoridad en Chile. Por otro lado, podría también recordar a la discusión sobre el surgimiento de actitudes tecnocráticas y tecnopopulistas en países europeos y su relación, muchas veces contradictoria, con la democracia [@chiru2022;@ganuza2020;@pilet2023].
 
-## Factores asociados a objeto de estudio 
+## Individualismo
 
-### Factor 1
+### Individidualismo-Colectivismo como una dimensión de la cultura
 
-Al final de esta sección, enunciar la hipótesis correspondiente
+- La forma más común en que se ha abordado el fenómeno del individualismo viene de la psicología cultural y, particularmente, de la comparación entre culturas.
+- Se suele conceptualizar, de tal forma, en par junto al colectivismo. Habrían culturas - y la gran mayoría de las veces, culturas es igual a países - individualistas, y otras colectivistas.
+- Tanto el individualismo como el colectivismo son conceptos de larga tradición intelectual. Con todo, su uso actual tuvo un gran auge a parti de 1980 con los estudios de Hofstede sobre la cultura laboral en trabajadores de 39 países de la empresa IBM: (Oyserman, 2002)
+  - Hofstede definió 4 grandes dimensiones de la cultura: "distancia de poder", "masculinidad", "aversión a las incertidumbre", e "individualismo". Está última ha sido la que más atención ha captado. (Brewer, 2007)
+  - Para Hofstede, Individualismo-Colectivismo, a nivel cultural, conforman los dos polos de un único espectro (Oyserman, 2002). Las sociedades individualistas se caracterizan por lazos poco estrechos entre individuos, y en de cada quien se espera que se haga cargo de si mismo y de su familia inmediata. Sociedades colectivistas, en tanto, se caracterizan porque sus miembros están integrados desde su nacimiento a grupos fuertemente cohesionados, que los protegen a lo largo de su vidas en cambio por lealtad incuestionada (Yoon, 200)
+- A pesar de que el propio Hofstede advierte que estas definiciones aplican 1) a un nivel cultural, y no al individual; y 2) son procesos dinámicos en que las culturas pueden transformarse -- estás recomendaciones no siempre han sido seguidas por los investigadores que han retomado está definición (Oyserman, 2002).
+- Para hacerse cargo del fenómeno a nivel individual se han elaborado conceptualizaciones alternativas: Por ejemplo, la idea del *self-construal*, o la idea de si las personas se conciben a sí mismas de forma independiente o interdependiente de sus grupos. Además, está propuesta se diferencia de la Hofstede en que es un constructo bidimensional. Ahora bien, pese a que se ha insistido que el *self-construal* y el individualismo-colectivismo son fenómenos diferentes, su operacionalización muchas veces se intercepta. Por lo demás, se mantiene una interpretación más o menos explícita que relaciona una concepción independiente con culturas individualistas. 
+- También se ha vuelto popular la conceptualización que distingue dimensiones horizontales y verticales de individualismo y colectivismo. El colectivismo horizontal se caracteriza por la igualdad y la cooperación entre miembros del grupo; el colectivismo vertical valora el deber hacia el grupo en función al lugar en la jerarquía e que su ubique la persona; El individualismo horizontal valora la autonomía y la unicidad; El individualismo vertical, en tanto, valora la competencia, el logro y la jerarquía entre individuos (Méndez, 2008). Pese a que Triandis parece estar pensando en una conceptualización para el fenómeno a nivel cultural (Méndez, 2008), nuevamente suele usarse este tipo de escalas para describir diferencias entre individuos. 
+- De tal modo, el uso de individualismo-colectivismo ha sido criticado por su falta de claridad conceptual, calificandolo como un concepto *catch-all*, que se usa por defecto para explicar diferencias culturales:
+  - Se observa acá una dimensión normativa: El individualismo se ha entendido como una dimensión esencial de la cultura estadounidense. También se ha asociado a la modernidad y al desarrollo (Voronov; Wang). Individualismo, así, suele tener una connotación positiva, mientras que colectivismo una negativa (moemeka2018), sobretodo en Estados Unidos y otros países anglosajones. De ahí que no sea de extrañar que la diferencia de individualismo y colectivismo puedan recordar, por ejemplo, las distinciones sociológicas clásicas entre sociedad moderna y sociedad tradicional; sociedad y comunidad; solidaridad orgánica y solidaridad mecánica. 
+  - La falta claridad conceptual se puede observar en el estudio de Oyserman, quien a través de un análisis de contenido a las escalas más utilizadas, concluye que individualismo puede referirse a has 6 cosas distintas (independencia, logros, competencia, unicidad, autoconocimiento y comunicación directa); mientras que colectivismo a otras 8 (relaciones, pertenencia, deber, armonía, búsqueda de consejos, contextualidad, jerarquía, grupos).
+  - Brewer va más allá, indicando que en realidad ni siquiera hay verdadera simetría en las formas en que individualismo y colectivismo están operacionalizados: Así, mientras que los ítems para medir el primero suelen referirse a la identida y la agencia de los individuos; el segundo se suele medir como un sistema de valores. 
+  - También se ha puesto atención a la falta de claridad de quiénes son los colectivos del colectivismo, no haciendo una clara distinción entre grupo, colectivo y comunidad. 
+    - Moemeka ha planteado que más que hablar de colectivismo se debería hablar de comunalismo. Los colectivos se forman por elección, de ahí que no haya verdadera contradicción entre colectivismo e individualismo. Por ejemplo, sindicatos y otros movimientos sociales serían colectivos que tienen mayor presencia en sociedades individualistas. 
+    - Para Brewer, las escalas analizadas suelen medir relaciones interpersonales, y propone distinguir está dimensión de la colectiva (que lo entiende a grupos enteros, religiosos, étnicos o nacionales)
+    - Este giro permitiría explicar las "anomalías" observadas en estos estudios:
+      - A veces, los individualistas puede ser tanto o más colectivistas que los colectivistas (Oyserman)
+      - Muchas veces, los colectivistas actúan de manera individualista (Vornov)
+      - Chile es un claro ejemplo. El colectivismo en Chile es alto. Más alto que en Corea del Sur, incluso ¿Implica esto que somos una sociedad colectivista? Lo cierto es que los niveles de individualismo en Chile son más altos que en Estados Unidos y que en Noruega. 
 
-### Factor N
+### Individualismo desde la Sociología del Individuo
 
-Al final de esta sección, enunciar la hipótesis correspondiente
+### Propuesta teórica: Una reconstrucción analítica del individualismo
+
+#### Legitimidad de la Individualidad
+
+#### Concepciones y autoconcepciones del individuo
+
+#### Tipos de individuación
