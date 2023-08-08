@@ -1,0 +1,303 @@
+---
+title: "Perfiles de Individualismo y apoyo a la democracia delegativa en Chile"
+author: "Gabriel Cortés Paredes"
+date: "Junio 2023"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    self_contained: true
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: 16:9
+      
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo(primary_color = "#333a56", secondary_color = "#f7f5e6",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono"),
+  table_row_even_background_color= "#52658f",
+  table_border_color= "#e8e8e8",
+  table_row_border_color= "#e8e8e8",
+  text_bold_color = "#e8e8e8",
+  text_bold_font_weight = "strong",
+  blockquote_left_border_color= "#828081",
+  title_slide_background_image = "../input/imagenes/portada.jpg",
+  title_slide_text_color = "#333a56",
+  title_slide_background_position = "right",
+  extra_css = list(".indicadores" = list("background-image" = "url(../input/imagenes/headerlegitimidad.png), url(../input/imagenes/header-autoconstruccion.png), url(../input/imagenes/header-individuacion.png), url(../input/imagenes/legitimidad.png), url(../input/imagenes/autoconstruccion.png), url(../input/imagenes/individuacion.png)",
+ "background-size" = "25%, 25%, 25%, 28%, 28%, 28%",
+ "background-position"= "12.5% 25%, 52.5% 25%, 92.5% 25%, 10% 75%, 52% 75%, 94% 75%")
+))
+```
+
+class: right, bottom, inverse
+background-image: url(../input/imagenes/portada.jpg)
+
+# Antecedentes
+### Problematización y objetivos
+
+---
+
+## Democracia Delegativa
+
+|    Forma de democracia    | Vertical Accountability | Horizontal Accountability |
+|:--------------------:|:----------------------:|:------------------------:|
+| Democracia representativa |           \+            |            \+             |
+|   Democracia delegativa   |           \+            |            \-             |
+|   Democracia *Uprooted*   |           \-            |            \+             |
+
+Nota. Tabla basada en O'Donnell (1994) y Luna (2016)
+
+* Chile no cumple con la definición de democracia delegativa. Sin embargo, Carlin (2017) identifica este perfil en el país.
+*   Caída en el apoyo a la democracia (CEP, 2023)
+*   Fortalecimiento de la imagen pública de la Dictadura (CADEM, 2023; CERC-MORI, 2023)
+*   Triunfo electoral de la derecha radical populista (Díaz et al., 2023)
+*   No se ha tendido a usar al individualismo como variable explicativa de estos tipos fenómenos.
+
+???
+
+Entonces parto los antecedentes comentando un poco sobre este concepto que ya se anticipa en el título de la presentación, el de democracia delegativa, que fue acuñado por O'Donnel en los años 90 y que podría entenderse, a modo de una definición preliminar, como lo que se resume en la tabla. la democracia delegativa es aquella donde existe una fuerte rendición de cuentas vertical, o sea, desde el líder hacia los ciudadanos, pero una débil rendición de cuentas horizontal, es decir, que existe poco control entre las instituciones del Estado. Se diferencian de una democracia representativa o institucional, ya que en estas existen ambos tipos de rendición de cuentas.
+
+Ahora, si bien Chile se ha tendido a tomar como un contraejemplo de democracia delegativa en América Latina, dadas las características de nuestra transición, Juan Pablo Luna argumenta que Chile tampoco sería un democracia representativa, sino más bien una democracia desarraigada (uprooted), un perfecto opuesto de la democracia delegativa, donde el fuerte control entre las instituciones del estado es acompañado por un desconexión profunda entre las élites políticas y la ciudadanía.  En el fondo, lo que plantea Luna, no es sino otra forma de conceptualizar lo que a veces se llama crisis de representatividad, y que podría relacionarse también con la llamada de crisis de autoridad. 
+
+En este contexto, no parece tan raro pensar que si bien la democracia chilena no es delegativa, si hayan sectores de la sociedad que apoyen esta variante, apelando por liderazgos fuertes que logren superar la desconexión entre élite y ciudadanía. 
+
+Esto se da en un contexto, además, en que es posible observar pista de que el apoyo a la democracia en Chile estaría a la baja, acompañado de revalorizaciones de la Dictadura, así como de los logros electores del Partido Repúblicano, que ha sido descrito como una derecha radical populista. 
+
+Por supuesto esto se inserta en un contexto global donde cae el apoyo a la democracia y avanzan alternativos populistas y autoritarias en muchas partes del mundo, y que se han sido ampliamente estudiandas en las ciencias sociales, asociandola a múltiples variables explicativas. Su relación con el individualismo, sin embargo, ha sido escasamente estudiada. 
+
+---
+
+## Individualismo-Colectivismo
+
+-   Una de las dimensiones de la cultura más estudiada
+-   Se ha relacionado Individualismo, Colectivismo y Autoritarismo (Gelfand et al., 1996; Kemmelmeier et al., 2003), dominancia social (Strunk & Chang, 1999); autoritarismo familiar (Rudy & Grusec, 2006); y gobernanza (Kyriacou, 2016)
+
+-   Limitaciones de estos estudios
+    -   Carácter exploratorio
+    -   Se suele definir culturas enteras como colectivistas o individualistas
+    -   No se ha explorado la asociación en Chile o en América Latina.
+    -   Democracia delegativa no es lo mismo que autoritarismo
+  
+???
+
+Esto pese a que hay cierto consenso que, de las dimensiones culturales identificadas por Hofstede, el espectro individualismo-colectivismo ha sido una de las más estudiadas, y que también se ha asociado con múltiples otros fenómenos. 
+
+Mi impresión es que esto se debe a que hay un prenoción de un individualismo que es intrinsicamente antiautoritario, quizás en la línea de lo Tocqueville, y el liberalismo en general, ha entendido por individualismo. Sin embargo, cuando se complejiza un poco el concepto, se ha observado que un individualismo vertical - que es aquel que privilgia la competencia y la jerarquía entre individuos - está relacionado a un mayor autoritarismo, a un mayor conservadurismo, y a mayores orientaciones de dominancia social. 
+
+Entonces, hay una brecha en lo que sabemos sobre la relación de individualismo y orientaciones políticas no democráticas, que ha sido hasta ahora abordada de forma escasa, dispersa en el tiempo, y que no se ha explorado en sociedes tradicionalmente definidas como colectivistas, como sería Chile o América Latina. 
+
+---
+
+## Problematización
+
+- Individualismo desde la teoría de la individualización
+  -   No tanto como una dimensión cultural sino como un fenómeno sociohistórico
+  -   No difieren solo entre sociedades, sino dentro de las sociedades
+-   La individualización es una corriente sociohistórica que transforma las relaciones con la autoridad
+-   Algunas formas de individualismo podrían estar relacionadas a preferencias por modalidades democráticas de autoridad, pero otras a liderazgos fuertes o carismáticos
+
+## Pregunta de investigación
+
+### .center[**¿Cuál es la relación entre distintos perfiles de individualismo y el apoyo a una democracia delegativa en la sociedad chilena?**]
+
+???
+
+Entonces, claro, mi propuesta es indagar en esa brecha, incluyendo un giro en como se entiende el individualismo: No desde la psicología cultural, sino desde las sociología del individuo y las teorías de la individualización; menos como una dimensión de la cultura y más como un fenómeno sociohistórico que no solo difiere entre culturas, sino que se difracta dentro de una misma sociedad. 
+
+Propongo entender el individualismo como resultado de procesos de individualización, que es una de las corrientes sociohistóricas que transforman las relaciones de autoridad, así como los soportes y las modalidades de su ejercicio. De tal modo, algunas formas de individualismo podrían estar relacionadas a preferencias por modalidades más democráticas de autoridad, como lo es la definición más clásica y liberal de individualismo. Pero otras podrían preferir el apoyo a liderazgos fuertes o carismáticos como los que son propios de una democracia delegativa.
+
+En vista de todo esto, me propongo responder la siguiente pregunta de investigación: 
+
+---
+
+## Objetivos
+
+### Objetivo General
+
+#### .center[**Establecer la relación entre distintos perfiles de individualismo y el apoyo a una democracia delegativa en la sociedad chilena**]
+
+### Objetivos específicos
+
+-   Identificar los perfiles de individualismo presentes en la sociedad chilena
+-   Describir el apoyo a una democracia delegativa en la sociedad chilena
+-   Relacionar los perfiles de individualismo con el apoyo a una democracia delegativa en la sociedad chilena.
+
+---
+
+class: right, bottom, inverse
+background-image: url(../input/imagenes/portada.jpg)
+
+# Marco Teórico
+### Democracia Delegativa e Individualismo
+???
+Con esto ya pasó al marco teórico, donde me detendré a definir los dos conceptos centrales de mi investigación. 
+
+---
+
+## Democracia delegativa
+
+-   Una forma de democracia que se basa en la premisa de que el ganador de las elecciones presidenciales tiene derecho a gobernar sin restricciones, es la encarnación del país y el principal defensor de sus intereses (O'Donnel, 1994)
+
+-   Carlin (2017) identifica este un perfil de personas que apoya a esta forma de democracia en Chile:
+
+    -   Prefieren líderes fuertes
+    -   Orientaciones no-liberales hacia los derechos políticos
+    -   Falta de compromiso hacia los derechos humanos
+    -   Prefieren las democracias a otras formas de gobierno
+
+-   Combinación de elementos profundamente emocionales con otros altamente técnicos. Podría recordar a:
+    -   La autoridad portaliana en Chile (Araujo & Beyer, 2013)
+    -   Discusiones sobre tecnocracia y tecnopopulismo en Europa (Chiru & Enyedi, 2022; Ganuza & Font, 2022; Pillet et al., 2023)
+    
+???
+
+La democracia delegativa fue definida por O'Donnell como una forma de democracia que se basa en la premisa de que el ganador de las elecciones presidenciales tiene derecho a gobernar sin restricciones, se considera la encarnación de la nación y el principal custodio de sus intereses. De ahí que, como mencionaba, esta sea una variante de la democracia donde predomina la rendición de cuentas vertical por sobre la horizontal.
+
+Pese a que Chile no se suele considerar como una democracia delegativa, Carlin identificó un perfil de personas que sí apoya esta forma de democracia en el país. Entre sus caracteristicas se encuentra el apoyar a líder fuertes que una al país, orientaciones no-liberales hacia los derechos políticos, falta de compromiso hacia los derechos humanos, y preferencia nominal por la democracia por sobre otras formas de gobierno.
+
+Una segunda característica que O'Donnell atribuye a la democracia delegativa es la combinación de elementos profundamente emocionales con otros altamente técnicos y tecnocráticos. De ahí que yo plantee que se podría ligar con discusiones tanto en Chile como en el extranjero. Por ejemplo, en Chile, el tipo ideal de la autoridad portaliana  también parece mezclar estos elementos; En la discusión internacional, particularmente en Europa, se podría asociar al surgimiento de tendencias tecnocráticas y tecnopopulistas, y su relación, a veces contradictoria, con la democracia. 
+    
+---
+
+## Individualismo
+
+|                              |                    Legitimación del individualismo                    |                Autoconstrucciones del individuo                | Tipos de individuación                                |
+|:----------------:|:----------------:|:-----------------:|:-----------------:|
+| Individualismo institucional |                           Alta legitimidad                            | Individuo independiente, atomizado y prexistente a la sociedad | Individuación reflexiva: "vive tu vida como quieras"  |
+|         Divergencias         | Individualismo comunitario; Ambiguiedad sobre el oportunismo en Chile; Diferencias entre esferas sociales |          "Valores asiáticos"; hiper-actor relacional           | Individuación Delegativa: "Arréglatelas como puedas" |
+|        Subdimensiones        |             Individualismo utilitario, moral y expresivo              |    Interdependencia relacional e Interdependencia colectiva    |                                                       |
+Nota. Tabla basada en Araujo & Martuccelli (2014; 2020), Cortois & Laermans (2018), Cross et al. (2011), Kemmelmeier et al. (2013), Martuccelli (2018), Silva Palacios (2015), y Zhai (2021)
+
+???
+En esta lámina trato de resumir mi perspectiva sobre el individualismo que, como mencioné, se aleja de aquellas que lo entienden como una dimensión cultural, para entenderlo más bien como el resultado de procesos sociohistóricos que crean individuos, los diferencian del colectivo y los ponen a cargo de sus propias vidas. Siguiendo a Martuccelli, diversas formas de individualismo podrían surgir a partir de la combinación específica de 3 factores, los que servirán como la dimensiones analíticas de esta investigación: La legitimidad del individualismo; las representaciones del individuo que acá se abordarán a nivel individual con el concepto de autoconstrucción; y los tipos de individuación. 
+
+En esta línea, el individualismo institucional - que es la definición más clásica y liberal si se quiere de individualismo - no es sino una variante particular, propia de las sociedades europeasy anglosajonas, que se caracteriza por una legitimidad del individualsimo, una representación del indivudo como independiente, atomizado y prexistente a la sociedad, y una individuación reflexiva, cuyo valor principal es la autonomía y cuyo imperativo es "vive tu vida como quieras".
+
+El problema, argumenta Martuccelli, es que esta variante particular se confunde como una definición general de un fenómeno que tiene múltiples divergencias. 
+
+* Por ejemplo, distintos grado de legitimación se pueden observar en el individualismo comunitario en Africa según Martuccelli, también en Chile en esta idea de que el oportunismo es un vicio colectivo aunque sea una virtud personal. Incluso en América del Norte se ha observado que grupos conservadores pueden aceptar el individualismo en la economía o en la elección de escuelas, pero no respecto a la autonomía personal en temas como el aborto o la eutanasia. De ahí que se relevante incluir como subdimensiones al individualismo utilitario, moral y el expresivo que son individualismos legitimados en la esfera económica, en la política y la afectiva, respectivamente. 
+
+*También se observan divergencias en la segunda dimensión, la de las autoconstrucciones, como se puede observar en la persistencia de los valores asiáticos en sociedades altamente individualizadas de Asia del Este, o acá en Chile la presencia de este hiper-actor que Araujo y Martuccelli le dan este apellido de relacional. Como subdimensiones aquí distingo la interpedencia relacional, o sea individuos que se definen en función a sus vínculos más cercanos; y la interdependencia colectiva, o sea individuos que se definen en función a los grupos étnicos, religiosos, o nacionales a los que pertenecen. 
+
+*Por último, en la tercera subdimensión, frente a la individuación reflexiva planteo una individuación que podría ser definida como delegativa, cuyo valor principal no es la autonomía sino la seguridad, y cuyo imperativo es más bien "arréglatelas como puedas". 
+---
+class: right, bottom, inverse
+background-image: url(../input/imagenes/portada.jpg)
+
+# Metodología
+### Datos, indicadores y técnicas de análisis
+
+---
+
+## Muestra
+
+
+-   7ma ola de la Encuesta Mundial de Valores en Chile
+
+-   Trabajo de campo entre enero y febrero de 2018
+
+-   1.000 personas mayores de 18 años
+
+-   Muestro multietápico de 3 niveles. Representación nacional, de zonas urbanas y rurales
+
+---
+background-image: url("../input/imagenes/dd.png")
+background-size: 90%
+background-position: 40% 62%
+## Variables dependientes
+
+???
+
+Propongo estos dos indicadores para democracia delegativa, atentiendo a sus dos características fundamentales descritas por O'Donnel: Un líderazgo fuerte y una orientaciones tecnocrática. Estoy en la duda sobre si hacer o no un índice con estas dos variables, dado que el alpha es de 0.65, lo que está bajo el estandar de 0.7, pero que de repente se podría relajar un poco. Hay una decisión que tengo que tomar aún. 
+
+---
+class: indicadores
+## Indicadores de Individualismo
+
+???
+
+La variable independiente es individualismo, que acá se define como una variable latente que puede ser observada a través de este set de indicadores seleccionados a partir de las dimensiones y subdimensiones antes descritas. 
+
+Legitimidad la mido a través de un set de preguntas acerca de la justificación de acciones individualies en la esfera económica, en la moral y en la afectiva. O sea, legitimidad del individualismo utilitario, del individualismo moral, y del individualismo afectivo, respectivamente. 
+
+En Autoconstrución del individuo distingo entre una interdependencia colectiva, que aquí la mido con cercanía a grupos nacionales y subnacionales; de una interdependencia relacional, o sea la identifación con vínculos cercanos, como la familia o las amistades. 
+
+Finalmente, en tipos de individuación, la mido a partir de un indicador único bajo el supuesto de que personas que prefieren la libertad por sobre la seguridad se corresponden a una individuación reflexiva, mientras que el caso contrario se relaciona más bien con individuación delegativa. 
+
+---
+
+## Técnica de análisis
+
+- Identificación de perfiles de individualismo: Análisis de clases latentes (Collins & Lanza, 2010)
+  - Modelo latente para cuando las variables latentes son categóricas
+  - Adecuado para identificar diferencias cualitativas y principios de organización de la población
+  - Es un técnica probabilística. Entiende que las variables observadas son un compuesto de la variable latente más un error.
+  - Los indicadores independientes deben ser categóricos. Opción: categorizar en torno a la media
+  
+- Relación con apoyo a la democracia delegativa
+  - Asignación a un perfil a partir de las probabilidades posteriores de membresía a una clase latente
+  - Dos modelos de regresión logística
+  - No es lo ideal, pero es un solución pragmática
+  
+
+
+???
+Entonces el primero momento de la estrategia de análisis será identificar los perfiles de individualismo a través del análisis de clases latentes, que es un modelo donde la variable latente es categórica y que permite identificar diferencias cualitativas y principios de organización de la población. Acá debo tomar una decisión sobre la recodificación de los indicadores, pues estos tiene que ser categóricos también. Pensaba que la mejor opción sería dicotomizar en torno la media, para así facilitar el análisis y reducir la dispersión de los datos, o sea, evitar que queden celdas vacías o con pocos casos en esta matriz gigante que está como en el fondo del modelo de clases latentes. 
+
+El segundo momento es establecer la relación con la democracia delegativa. Para esto asignaré a cada caso el perfil al que sea más probable que pertenezca según las estimaciones del modelo. Esto me permitirá construir un nuevo indicador que será la variable explicativa en un modelo regresión logística (o lineal si es que decido construir un indice) para predecir el apoyo a la demcoracia delegativa. Entiendo que esta no es una solución ideal, dado el error asociado a la condición probabilística de la técnica, pero al menos es una salida pragmática que permitiría arrojar luces sobre la asociación y responder mi pregunta de investigación. 
+
+---
+## Variables de control
+
+|Variable|Referencia|
+|:------:|:--------:|
+|Sensación de Felicidad|Nowakowski, 2021|
+|Clase social subjetiva|Gidron & Hall, 2020|
+|Confianza generalizada|Bekiaris & Daskalopoulu, 2021|
+|Polarización moral|Crimston et al., 2022|
+|Postmaterialismo|Lima et al., 2021|
+|Interés en la política|Rico et al., 2020|
+|Autoidentificación política|Navia & Osorio, 2018|
+|Sexo|Navia & Osorio, 2018|
+|Edad|Navia & Osorio, 2018|
+|Identificación religiosa|Eskelin & Verkuyten, 2018|
+|Ingresos| Xuereb et al., 2021
+
+???
+Estas son algunas variables de control que las tomo de las investigaciones sobre apoyo a la democracia, democracia delegativa, y apoyo a partidos populistas. [LEER variables]
+
+---
+
+#Planificación
+
+|Actividades|Jun|Jul|Ago|Sep|Oct|Nov|Dec|
+|:---------:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|Defensa del proyecto|X|||||||
+|Corrección del proyecto|X |X||||||
+|Completar revisión de literatura|X|X||||||
+|Completar marcos teóricos y metodológicos||X|X|||||
+|Análisis descriptivo|||X|||||
+|Primer Avance|||X|||||
+|Análisis clases latentes|||X|X|||
+|Análisis regresión||||X||||
+|Segundo Avance||||X||||
+|Redacción Final|||||X|||
+|Revisión y correciones finales||||||X||
+|Entrega de Tesis al comité||||||X||
+|Defensa de Tesis|||||||X|
+
+???
+Cierro conn la planificación propuesta. Espero lo que queda de junio y quizás julio dedicarme a corregir, integrar los comentarios que me hagan, leer todo lo que tenga que leer respecto a la revisión de literatura, el marco teórico y metodológico.
+
+Dedicarme fundamentalmente durante agosto y septiembre al análisis de los datos. Octubre y Noviembre para redactar el texto final y afinir todos los bordes que vayan quedando. Todo con el objetivo de ojalá llegar defender la tesis en diciembre. 

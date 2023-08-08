@@ -1,9 +1,168 @@
-# Metodología
+# Estrategia Metodológica
 
 ## Datos
 
+### Muestra
 
-## Variables
+Se utilizarán datos de la muestra chilena de la séptima ola de la Encuesta Mundial de Valores, la más reciente a la fecha. El trabajo de campo se realizó entre enero y febrero del 2018, con una muestra de 1.000 personas mayores de 18 años. Estas fueron seleccionadas mediante un muestreo multietápico de 3 niveles y cuenta con representación nacional, así como de zonas urbanas y rurales [@haerpfer2020]. En la tabla 3.1 se resumen algunas de las variables de caracterización principales de la base de datos. 
+
+```{r, include=F, echo=F}
+df %>% select(c(D_INTERVIEW, H_URBRURAL, Q260, Q262, Q275R, Q287, Q289))
+
+zona <- df %>% group_by(H_URBRURAL) %>% summarise(D_INTERVIEW= n()) %>%
+  mutate(Indicador = case_when(H_URBRURAL== 1 ~"Urbano",
+                         H_URBRURAL==2 ~"Rural"),
+         n= D_INTERVIEW, Porcentaje= round((n/sum(n)*100),1)) %>% select(Indicador, n, Porcentaje)
+zona
+
+sexo <- df %>% group_by(Q260) %>% summarise(D_INTERVIEW= n()) %>%
+  mutate(Indicador = case_when(Q260== 1 ~"Hombre",
+                         Q260==2 ~"Mujer"),
+         n= D_INTERVIEW, Porcentaje= round((n/sum(n)*100),1)) %>% select(Indicador, n, Porcentaje)
+sexo
+
+edad <- df %>% mutate(Indicador= case_when(Q262<=29 ~ "18 a 29 años",
+                                     Q262>29 & Q262<=49 ~ "30 a 49 años",
+                                     Q262>49 ~ "Más de 50 años")) %>% na.omit() %>%
+  group_by(Indicador) %>% summarise(D_INTERVIEW=n())%>% mutate(n= D_INTERVIEW, Porcentaje= round((n/sum(n)*100),1)) %>% select(Indicador, n, Porcentaje)
+edad
+
+educ <- df %>% mutate(Indicador= case_when(Q275R==1 ~ "Básico",
+                                     Q275R==2 ~ "Medio",
+                                     Q275R==3 ~ "Superior")) %>% na.omit() %>%
+  group_by(Indicador) %>% summarise(D_INTERVIEW=n())%>% mutate(n= D_INTERVIEW, Porcentaje= round((n/sum(n)*100),1)) %>% select(Indicador, n, Porcentaje)
+educ
+
+rel <- df %>% mutate(Indicador= case_when(Q289==0 ~ "Ninguna",
+                                    Q289==1 ~ "Católica",
+                                    Q289==2 ~"Evangélica",
+                                    Q289>2 ~"Otra")) %>% na.omit() %>%
+  group_by(Indicador) %>% summarise(D_INTERVIEW=n())%>% mutate(n= D_INTERVIEW, Porcentaje= round((n/sum(n)*100),1)) %>% select(Indicador, n, Porcentaje)
+rel
+
+tab2 <- data.frame(Indicador="N", n= 1000, Porcentaje = 100)
+tab2 <- rbind(tab2, sexo, edad, zona, educ, rel)
+
+```
+
+```{r, echo=F}
+tab2 %>% 
+  kable(
+    format="latex",
+    booktabs= TRUE,
+    escape = FALSE,
+    caption = "Resumen muestra", align = "c") %>%
+  row_spec(row=0, align = "c") %>%
+  kable_styling(full_width = TRUE) %>% 
+  footnote(general_title = "Nota.",
+    general="Tabla basada en Encuesta Mundial de Valores 2018 (Haerpfer et al., 2020)",
+    footnote_as_chunk = T) %>%   
+  kable_classic(full_width = T, html_font = "Helvetica") %>% 
+  pack_rows("Sexo", 2, 3) %>%
+  pack_rows("Edad", 4, 6) %>%
+  pack_rows("Zona", 7, 8) %>%
+  pack_rows("Nivel Educacional", 9, 11) %>%
+  pack_rows("Religión", 12, 15)
+```
+
+### Variable dependiente
+
+```{r, include=F, echo=FALSE}
+
+dd <- df %>% select(c(Q235, Q236)) %>% na.omit()
+alpha(dd)
+```
 
 
-## Métodos
+La variable dependiente es apoyo a la democracia delegativa, la que se medirá a través de un índice sumativo de dos ítems: i) Valoración de tener un líder fuerte que no se preocupe por el congreso y las elecciones; ii) Valoración de tener expertos, no un gobierno, tomando decisiones de acuerdo a lo que ellos cree que es mejor para el país. La primera pregunta ha sido utilizada con anterioridad para medir el apoyo a la democracia delegativa en Asia [@kang2018a], mientras que el segundo se integra considerando la impronta tecnocrática de la democracia delegativa [@odonnell1994]. 
+
+La consistencia interna de este indicador, medio a través del $\alpha$ de Cronbach es de 0,65. Si bien esto está por debajo de la convención que considera valores sobre 0,7 como aceptables, no debería tomarse como una limitación para su uso cuando hay razones teóricas de peso que permitan argumentar que ambos ítems miden un único constructo [@schmitt1996].  
+
+### Variable independiente
+
+La variable independiente para esta investigación es el individualismo, que aquí se define como una variable latente y categórica que puede medirse a través de un conjunto de indicadores operacionalizados a partir de las dimensiones y subdimensiones definidas en el marco teórico. En la table 3.1. se resumen los indicadores seleccionados. 
+
+```{r, echo=FALSE}
+tab3 <- data.frame(Dimensión=c(rep("Legitimidad del individualismo utilitario", 3),
+                                    rep("Legitimidad del individualismo moral", 3),
+                                    rep("Legitimidad del individualismo expresivo", 3),
+                                    rep("Concepción Independiente", 3),
+                                    rep("Concepción Relacional", 3),
+                                    rep("Concepción Colectiva", 3),
+                                    "Valor principal"),
+                   Indicadores=c("Valoración de la competencia",
+                                 "Justificación de evasión transporte público",
+                                 "Justificación de aceptar ayudas sociales sin necesidad",
+                                 "Importancia de la igualdad de ingresos",
+                                 "Importancia de la igualdad de género",
+                                 "Importancia del respeto a los derechos civiles",
+                                 "Justificación de la homosexualidad",
+                                 "Justificación del divorcio",
+                                 "Justificación del sexo premarital",
+                                 "Importancia de la independencia",
+                                 "Importancia de la imaginación",
+                                 "Importancia de la perseverancia",
+                                 "Importancia de la familia",
+                                 "Importancia de los amigos",
+                                 "Importancia de hacer a los padres orgullosos",
+                                 "Cercanía con pueblo o ciudad",
+                                 "Cercanía con la región",
+                                 "Cercanía con Chile",
+                                 "Considera más importante la seguridad o la libertad"))
+a <- list("c", "l")
+
+tab3 %>% 
+  kable(
+    format="latex",
+    booktabs= TRUE,
+    escape = FALSE,
+    caption = "Resumen indicadores", align = "cl") %>%
+  row_spec(row=0, align = "c") %>%
+  kable_classic(full_width = F, html_font = "Helvetica") %>%
+  column_spec(1, width = "5cm") %>%
+  column_spec(2, width = "10cm") %>%
+  pack_rows("Legitimidad de la individualidad", 1, 9, latex_align = "l") %>% 
+  pack_rows("Concepciones del Individuo", 10, 18, latex_align = "l") %>% 
+  pack_rows("Valores e imperativos", 19, 19, latex_align = "l") %>%
+  collapse_rows(columns = 1, valign = "middle", latex_hline = "major")
+  
+
+```
+
+
+Le legitimidad de la individualidad se medirá a través de 3 subdimensiones: Legitimidad del individualismo utilitario, legitimidad del individualismo moral y legitimidad del individualismo expresivo.
+
+- Para la legitimidad del individualismo utilitario se tomarán indicadores que apuntan a medir la legitimidad de acciones estratégicas que permitan obtener beneficios personales, incluso si éstas están en contra de las normas.
+- Para la legitimidad del individualismo moral se tomarán indicadores sobre la importancia de la igualdad de ingresos, la igualdad de género y los derechos civiles en una democracia. Con éstos, se pretende recoger la importancia que ha adquirido la igualdad de trato y los derechos humanos en la sociedad chilena [@araujo2012; @araujo2020a]. Sin duda, se podría argumentar que tomar estos indicadores podría generar problemas de endogeneidad con la variables dependiente, que también se refiere a aspectos sobre la democracia. Sin embargo, se debe considerar que la conceptualización aquí trabajada no asume que una relación intrínseca entre liberalismo-democracia e individualismo. Es más, la apuesta es precisamente que que hay modelos de individualismo en que tal relación no existe o es contradictoria. 
+- Para legitimidad del individualismo expresivo se tomarán indicadores sobre la legitimidad de prácticas individualizadas en las esferas de la sexualidad y del amor. 
+
+La dimensión de concepciones del individuo se construirá a partir de las 3 subdimensiones definidas por Brewer [-@brewer2007]: concepción independiente, concepción relacional, y concepción colectiva. 
+
+- Para autoncepción independiente se mide a través de ítems sobre la importancia de transmitir a futuras generaciones cualidades como la independencia, la imaginación y la perseverancia.
+- Para la autoncepción relacional se tomarán ítems sobre la importan para las personas de sus relaciones más cercanas, particularmente la familia, los padres y los amigos.
+- Para la autoconcepción colectiva se tomarán ítems sobre la identificación de las personas con su país, su región y su comuna. 
+
+Por último, la dimensión de valores e imperativos se medirá a partir de un indicador único bajo el supuesto de que personas que le dan una mayor importancia relativa a la libertad por sobre la seguridad se corresponden a una individuación reflexiva (y que la autonomía es su valor principal), mientras que en el caso contrario se relacionan más bien con una individuación delegativa (y que la búsqueda por seguridad desplaza a la autonomía como valor principal).
+
+### Variables de control
+
+Se sumarán variables de control principalmente a características sociodemográficas de las que se han observado se relacionan con el apoyo a la democracia, tales como autoidentificación política en el espectro izquierda-derecha, sexo, edad, nivel educacional e identificación religiosa [@navia2019; @gidron2020; @eskelinen2020]
+
+## Técnica de análisis
+
+### Análisis de clases latentes
+
+Para la construcción de los perfiles de individualismo se utilizará la técnica de análisis de clases latentes. Este es un modelo de variables latentes para cunado estas son categóricas en lugar de continuas, lo que permite identificar diferencias cualitativas y principios de organización dentro de la población [@collins2010].
+
+El uso de métodos cuantitativos en una investigación con una perspectiva teórica como la que aquí se ha planteado -- la individualización y la sociología del individuo -- puede resultar problemático, pues este es un campo donde proliferan principalmente lo estudios cualitativos. Frente a esto, y reconociendo la profundidad que tales aproximaciones le han dado a la investigación del individuo en Chile, el análisis de clases latentes puede ser una herramienta importante para complementar el conocimientos producido sobre el individualismo en Chile.
+
+Mientras las técnicas cuantitativas utilizadas por casi la totalidad de los estudios desde la psicología cultural se concentran en encontrar relaciones entre el individualismo (y el colectivismo) con otras variables, el análisis de clases latentes ofrece una *aproximación orientada a la persona* [@collins2010]. Esta forma de abordar el análisis estadístico se diferencia en que no busca establecer relación entre variables, sino que se propone dar con resultados que sean interpretables a nivel del individuo y que sean informativos sobre los patrones generales en que éstos se comportan [@bergman2015]. El análisis de clases latentes, de tal modo, ofrece la oportunidad de realizar una sociología a nivel del individuo, a partir de quienes -- a través de sus percepciones, creencias y experiencias -- sería posible mapear las difracciones de los procesos estructurales de individuación en Chile. 
+
+Es importante tener en cuenta que tanto las variables latentes como las observadas en este modelo son categóricas. Por lo tanto, se deben tomar decisiones sobre la redocidicación de los indicadores propuestos. En general, para simplificar el análisis y evitar la dispersión (*sparseness*) de los datos, es recomendable dictomizar las variables respecto a la media.
+
+Una forma de entender esta decisión es pensar que el análisis de clases latentes organiza la información en una tabla de contigencia con $W$ celdas. En general, se busca que la relación entre el tamaño muestra y el número de celdas ($N/W$) sea lo más alto posible [@collins2010]. Del mismo modo, al igual que al analizar una tabla de contigencia, se quiere evitar que haya celdas vacías o con pocos casos. Al dicotomizar respecto a la media, se lograrían ambos objetivos. 
+
+### Modelo de regresión lineal
+
+
+
