@@ -1,25 +1,28 @@
 ---
 title: 'PERFILES DE INDIVIDUALISMO Y SU RELACIÓN CON EL APOYO A LA DEMOCRACIA DELEGATIVA EN LA SOCIEDAD CHILENA'
-subtitle: 
+subtitle: "Santiago, Chile"
 author: "GABRIEL CORTÉS PAREDES"
-date: "Santiago de Chile, 2023"
+date: >
+  Santiago de Chile
+  2023
 institution: "FACULTAD DE CIENCIAS SOCIALES E HISTORIA"
 degree: "Tesis para optar al grado de magíster en Métodos para la Investigación Social"
 advisor: "Profesora guía: Macarena Orchard"
 bibliography: [tesis.bib]
-biblio-style: apa-good.bst
-cls: apa.cls
+csl: apa.csl
 link-citations: yes
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
 fontsize: 12pt
-lof: True
+lof: true
 lot: True
-
+always_allow_html: true
+prefacio: |
+ *"If success and failure are the result of individual effort, those at the top can hardly be blamed -- unless, of course, they are politician"* (Bellah et al, 1996,   p.xv)
 ---
 
-```{r, echo=F, include=F}
+```{r, echo=F, include=F, warning=FALSE}
 library(tidyverse)
 library(knitr)
 library(kableExtra)
@@ -32,20 +35,6 @@ df <- wvs %>% select(c(D_INTERVIEW, H_SETTLEMENT, H_URBRURAL, Q1, Q2, Q8, Q11, Q
                        Q235, Q236, Q240, Q246, Q247, Q249, Q255,
                        Q256, Q257, Q260, Q262, Q275R, Q287, Q289)) %>%
    mutate(across(everything(),~ifelse(.<0, NA, .)))
-
 ```
 
 
-# Prefacio {-}
-
-*"A toast, Jedebiah, to love on my terms. Those are the only terms anybody ever knows -- his own"* (Orson Welles, 1941)
-
-*"If success and failure are the result of individual effort, those at the top can hardly be blamed -- unless, of course, they are politician"* (Bellah et al, 1996, p.xv)
-
-# Resumen {-}
-
-
-
-# Agradecimientos {-}
-
-Agradecimientos aquí.

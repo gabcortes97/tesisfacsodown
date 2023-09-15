@@ -101,7 +101,7 @@
 \title{PERFILES DE INDIVIDUALISMO Y SU RELACIÓN CON EL APOYO A LA DEMOCRACIA DELEGATIVA EN LA SOCIEDAD CHILENA}
 \author{GABRIEL CORTÉS PAREDES}
 % The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
-\date{Santiago de Chile, 2023}
+\date{Santiago de Chile 2023}
 \division{}
 \advisor{Profesora guía: Macarena Orchard}
 \institution{FACULTAD DE CIENCIAS SOCIALES E HISTORIA}
@@ -153,7 +153,7 @@
 }
 
 \Preface{
-
+\emph{``If success and failure are the result of individual effort, those at the top can hardly be blamed -- unless, of course, they are politician''} (Bellah et al, 1996, p.xv)
 }
 
 \Abstract{
@@ -174,6 +174,8 @@
 \usepackage[normalem]{ulem}
 \usepackage{makecell}
 \usepackage{xcolor}
+
+\renewcommand{\baselinestretch}{1.5}
 % End of CII addition
 %%
 %% End Preamble
@@ -181,25 +183,33 @@
 %
 \let\chaptername\relax
 \begin{document}
+\raggedbottom
 \bibliographystyle{apa-good}
 % Everything below added by CII
   \maketitle
 
 \frontmatter % this stuff will be roman-numbered
-\pagestyle{empty} % this removes page numbers from the frontmatter
+ \pagestyle{empty} 
 
 
+  \begin{prefacio}
+  \thispagestyle{empty}
+    \emph{``If success and failure are the result of individual effort, those at the top can hardly be blamed -- unless, of course, they are politician''} (Bellah et al, 1996, p.xv)
+  \end{prefacio}
 
-%  \hypersetup{linkcolor=black}
+%  \hypersetup{linkcolor=black}}
   \setcounter{tocdepth}{1}
   \setlength{\parskip}{0pt}
   \tableofcontents
+  \thispagestyle{empty}
 
 \setlength\parskip{1em plus 0.1em minus 0.2em}
 
   \listoftables
+  \thispagestyle{empty}
 
   \listoffigures
+  \thispagestyle{empty}
 
 
 
@@ -207,46 +217,30 @@
 \titleformat{\chapter}{\normalfont\Huge\bfseries}{\thechapter}{1em}{}
 \pagestyle{fancyplain} % turns page numbering back on
 
-\hypertarget{prefacio}{%
-\chapter*{Prefacio}\label{prefacio}}
-\addcontentsline{toc}{chapter}{Prefacio}
-
-\emph{``A toast, Jedebiah, to love on my terms. Those are the only terms anybody ever knows -- his own''} (Orson Welles, 1941)
-
-\emph{``If success and failure are the result of individual effort, those at the top can hardly be blamed -- unless, of course, they are politician''} (Bellah et al, 1996, p.xv)
-
-\hypertarget{resumen}{%
-\chapter*{Resumen}\label{resumen}}
-\addcontentsline{toc}{chapter}{Resumen}
-
-\hypertarget{agradecimientos}{%
-\chapter*{Agradecimientos}\label{agradecimientos}}
-\addcontentsline{toc}{chapter}{Agradecimientos}
-
-Agradecimientos aquí.
-
 \hypertarget{antecedentes}{%
 \chapter{Antecedentes}\label{antecedentes}}
 
-Si bien se ha observado que el apoyo a la democracia en Chile ha sido históricamente alto \citep{navia2019}, se debe notar con atención algunos síntomas que indican una caída en este soporte, particularmente durante este último año \citep{cep}, acompañada de un fortalecimiento de la imagen pública de Augusto Pinochet y su dictadura \citep{cadem2023, cerc-mori}, así como de los últimos resultados electorales que han sido favorables para José Antonio Kast y su Partido Republicano, quienes han defendido abiertamente el legado del régimen militar y que han sido descritos como populistas radicales de derecha \citep{diaz2023}.
+Si bien se ha observado que el apoyo a la democracia en Chile ha sido históricamente alto \citep{navia2019}, se deben notar con atención algunos síntomas que indican una caída en este respaldo \citep{cep}. Además, durante este último año se ha observado un fortalecimiento de la imagen pública de Augusto Pinochet y su dictadura \citep{cadem2023, cerc-mori}, así como de los últimos resultados electorales que han sido favorables para candidatos que han defendido abiertamente el legado del régimen militar y que han sido descritos como populistas radicales de derecha \citep{diaz2023}. Esto se da, además, en el contexto de una crisis de representatividad que se ha profundizado durante la última década, pero cuyos orígenes se pueden retrotraer incluso hacia fines de los años 90 \citep{luna2016}.
 
-Esto se da, además, en el contexto de un crisis de representatividad que se ha profundizado durante la última década, pero cuyos orígenes se pueden retrotraer incluso hacia fines de los años 90, en los primeros años de la transición democrática chilena tras el fin de la Dictadura Militar en 1990 \citep{luna2016}. Este período de la historia chilena fue tempranamente considerado como exitoso, debido a su rápida consolidación institucional y económica, particularmente en comparación a procesos similares en otros países de América Latina.
+La transición democrática chilena fue tempranamente considerada como exitosa, debido a su rápida consolidación institucional y económica, particularmente en comparación a procesos similares en otros países de América Latina \citep{odonnell1994}. En el resto de la región, por el contrario, se observaban dificultades en los procesos de consolidación de los nuevos regímenes, que fueron descritos por Guillermo O'Donnell \citeyearpar{odonnell1994} bajo el concepto de \emph{democracia delegativa}. Esta variante de democracia se caracterizaría por un presidente que es investido de un liderazgo fuerte que le permite pasar por sobre el control de otras instituciones del Estado con el fin de sanar y unir a la nación. En otras palabras, una democracia delegativa cuenta con una fuerte responsabilidad vertical (o \emph{vertical accountability}), es decir, hacia el pueblo o los ciudadanos, pero no hacia otros poderes o instituciones (\emph{horizontal accountability}) \citep{odonnell1994}.
 
-En el resto de la región, por el contrario, se observaban dificultades en los procesos de consolidación de los nuevos regímenes, que fueron descritos por Guillermo O'Donnell \citeyearpar{odonnell1994} bajo el concepto de \emph{democracia delegativa}. Esta variante de democracia se caracterizaría por la presencia de un presidente que es invetido de un liderazgo fuerte que le permite pasar por sobre el control de otras instituciones del Estado con el fin de sanar y unir a la nación. En otros palabras, una democracia delegativa cuenta con una fuerte responsabilidad vertical (o \emph{vertical accountability}), es decir, hacia el pueblo o los ciudadanos, pero no hacia otros poderes o instituciones (\emph{horizontal accouintability}) \citep{odonnell1994}.
+Esta descripción, por cierto, no se acomoda a la realidad chilena. Tampoco, sin embargo, se podría decir que Chile es plenamente una democracia representativa donde convivan ambas formas de rendición de cuentas. Por el contrario, lo que se observa es que la contundencia del control horizontal entre instituciones es acompañada por un profundo desarraigo entre las élites políticas y la ciudadanía \citep{luna2016}.
 
-Esta descripción, por cierto, no se acomoda a la realidad chilena. Tampoco, sin embargo, se podría decir que Chile es plenamente una democracia delegativa donde convivan ambas formas de rendición de cuentas. Por el contrario, lo que se observa es que la contundencia del control horizontal entre instituciones es acompañada por un profundo desarraigo entre las élites políticas y la ciudadanía \citep{luna2016}.
+En este contexto, si bien Chile no es una democracia delegativa, no sería raro pensar que aparezcan tendencias que apelen a una mayor rendición de cuentas vertical (por ejemplo, cumplir las promesas electorales), incluso a expensas de debilitar las instituciones de control horizontal, respaldando así soluciones autoritarias o no-democráticas \citep{carlin2018}
 
-En este contexto, si bien Chile no es una democracia delegativa, no sería raro pensar que aparezcan tendencias que apelen a una mayor rendición de cuentas vertical, incluso a expensas de debilitar las instituciones de control horizontal, respaldando así soluciones autoritarias o no-democráticas \citep{carlin2018}
+Por supuesto, la disminución del apoyo a la democracia y el surgimiento de opciones autoritarias o populistas no es un fenómeno únicamente local, y ha sido estudiado ampliamente en varias regiones del mundo bajo diversas etiquetas, tales como \emph{liderazgos fuertes, no-democráticos o delegativos} \citep{carlin2011, carlin2018, crimston2022, kang2018, lima2021, selvanathan2022, xuereb2021}, \emph{populismos} \citep{baro2022, gidron2020, nowakowski2021}, o \emph{derecha populista radical} \citep{diaz2023, donovan2019, donovan2021}. También se ha puesto esfuerzos en identificar sus determinantes, entre los que se pueden contar factores culturales \citep{lima2021, marchlewska2022, selvanathan2022}; económicos objetivos y subjetivos \citep{arikan2019, rico2020, wu2019, xuereb2021}; el bajo bienestar o estatus subjetivo \citep{gidron2020, nowakowski2021}; sentimientos de anomia y de polarización moral \citep{crimston2022}; la pertenencia a una minoría étnica o religiosa con baja integración nacional \citep{eskelinen2020}; así como rasgos personales como el narcisismo \citep{marchlewska2019}, la autoeficacia \citep{rico2020} o el privilegiar los valores de conservación \citep{baro2022}.
 
-Por supuesto, la disminución del apoyo a la democracia y el surgimiento de opciones autoritarias o populistas no es un fenómeno únicamente local, y ha sido estudiado ampliamente en varias regiones del mundo bajo diversas etiquetas, tales como \emph{liderazgos fuertes, no-democráticos o delegativos} \citep{carlin2011, carlin2018, crimston2022, kang2018, lima2021, selvanathan2022, xuereb2021}, \emph{populismos} \citep{baro2022, gidron2020, nowakowski2021}, o \emph{derecha populista radical} \citep{diaz2023, donovan2019, donovan2021}. También se ha puesto esfuerzos en identificar sus determinantes, entre los que se pueden contar factores culturales \citep{lima2021, marchlewska2022, selvanathan2022}; factores económicos objetivos y subjetivos \citep{arikan2019, rico2020, wu2019, xuereb2021}; bajo bienestar o estatus subjetivo \citep{gidron2020, nowakowski2021}; sentimientos de anomia y de polarización moral \citep{crimston2022}; la pertenencia a una minoría étnica o religiosa con baja integración nacional \citep{eskelinen2020}; así como otros rasgos o valores personales \citep{baro2022, marchlewska2019, rico2020}.
+En este contexto, pese a que el espectro Individualismo-Colectivismo se considera una de las más importantes y más estudiadas dimensiones de la cultura \citep{binder2019, fatehi2020}, y que ha sido utilizado como variable explicativa en diversos estudios sobre economía \citep{binder2019, kyriacou2016, germani2021, toikko2020}, capital social \citep{beilmann2018}; género \citep{dabiriyantehrani2022, davis2019}, familia \citep{al-hassan2021, rudy2006}, trabajo \citep{refslund2022, solis2018, stewart2020}, cumplimiento de normas \citep{varet2018, zhang2020}, y actitudes frente a la pandemia y la vacunación \citep{card2022}, su conexión con las preferencias políticas y el respaldo hacia distintos modelos de democracia aún ha sido escasamente explorada.
 
-Como se puede notar, pese a que el espectro Individualismo-Colectivismo se considera una de las más importantes y más estudiadas dimensiones de la cultura \citep{binder2019, fatehi2020}, y que ha sido utilizado como variable explicativa en diversos estudios sobre economía \citep{binder2019, kyriacou2016, germani2021, toikko2020}, capital social \citep{beilmann2018}; género \citep{dabiriyantehrani2022, davis2019}, familia \citep{al-hassan2021, rudy2006}, trabajo \citep{refslund2022, solis2018, stewart2020}, cumplimiento de normas \citep{varet2018, zhang2020}, y actitudes frente a la pandemia y la vacunación \citep{card2022}, su conexión con las preferencias políticas y el respaldo hacia distintos modelos de democracia aún ha sido escasamente explorada.
+Los conceptos de individualismo y colectivismo tienen un larga tradición intelectual, pero su auge actual en la literatura se remonta a los estudios de Hofstede sobre la cultura laboral en trabajadores de IBM en 39 países durante la década de 1980 \citep{oyserman2002}. Hofstede definió cuatro dimensiones culturales: ``distancia de poder'', ``masculinidad'', ``aversión a la incertidumbre'' e ``individualismo'', con esta última captando la mayor atención de los investigadores \citep{brewer2007}.
 
-La literatura existente se ha preocupado más bien de explorar la relación entre individualismo, colectivismo y autoritarismo. Al respecto, se ha descrito que entre estudiantes universitarios estadounidenses la relación entre individualismo y colectivismo es en realidad ortogonal, ubicando al primero en el polo opuesto del autoritarismo \citep{gelfand1996}. En una serie de estudios comparativos en varios países, por otro lado, se ha complejizado esa relación, encontrando una relación positiva entre autoritarismo e individualismo vertical -- que privilegia la competencia y jerarquía entre individuos - pero no con el individualismo horizontal, que privilegia la competencia y la igualdad entre individuos \citep{kemmelmeier2003}. Se ha observado, además, que el individualismo vertical está asociado con orientaciones de dominancia social \citep{strunk1999} y con el voto conservador en los Estados Unidos \citep{zhang2009}. También se ha explorado la relación entre individualismo, colectivismo y autoritatismo a nivel familiar, encontrando que madres colectivistas apoyan un estilo más autoritario de parentalidad \citep{rudy2006}. Por otro lado, se ha argumentado que culturales individualistas promueven una mejor gobernanza, desincentivando la corrupción, el nepotismo y el clientelismo \citep{kyriacou2016}.
+Desde la conceptualización de Hofstede, Individualismo-Colectivismo -- definidos a un nivel cultural -- conforman los dos polos de un único espectro \citep{oyserman2002}. Las sociedades individualistas se caracterizarían por lazos poco estrechos entre individuos, de quienes se espera se hagan cargo de sí mismos y de su familia inmediata. La sociedades colectivistas, en tanto, se definen porque sus miembros están integrados desde su nacimiento a grupos fuertemente cohesionados que los protegen a lo largo de sus vidas a cambio de una lealtad incuestionada \citep{yoon2010}.
 
-Estos estudios comparten limitaciones, como su escasez y dispersión en el tiempo, su carácter exploratorio, o el circunscribir las definiciones de individualismo y colectivismo a un nivel cultural, sin detenerse a analizar las posibles difracciones dentro de una misma sociedad. Además, ninguna de estas investigaciones ha explorado estos fenómenos en Chile o en América Latina. Tampoco parece haberse explorado la relación con el apoyo a una democracia delegativa que, si bien contiene rasgos autoritarios e iliberales, parece ser un fenómeno diferente \citep{carlin2011, carlin2018}. De tal modo, se buscará abordar esa brecvha incluyendo un giro en la conceptualización de individualismo, que busca dejar de entenderlo como una dimensión cultural para pasar a definirlo como el resultado de procesos sociohistóricos de individualización que difieren no solo entre culturas, sino también dentro de una misma sociedad \citep{martuccelli2018, silvapalacios2015}.
+Así, las investigaciones que han explorado la relación entre individualismo-colectivismo con actitudes política es más bien escasa y dispersa en el tiempo. Al respecto, se ha descrito que entre estudiantes universitarios estadounidenses, el individualismo y colectivismo son dimensiones ortogonales, ubicando al primero, más bien, en el polo opuesto del autoritarismo \citep{gelfand1996}. En una serie de estudios comparativos en varios países, por otro lado, se han complejizado estos hallazgos, encontrando una asociación positiva entre autoritarismo e individualismo vertical -- que privilegia la competencia y jerarquía entre individuos -- pero no con el individualismo horizontal, que privilegia la competencia y la igualdad entre individuos \citep{kemmelmeier2003}. Se ha observado, además, que el individualismo vertical está asociado con orientaciones de dominancia social \citep{strunk1999} y con el voto conservador en los Estados Unidos \citep{zhang2009}. También se ha explorado la relación entre individualismo, colectivismo y autoritarismo a nivel familiar, encontrando que madres colectivistas apoyan un estilo más autoritario de parentalidad \citep{rudy2006}. Por otro lado, se ha argumentado que culturas individualistas promueven una mejor gobernanza, desincentivando la corrupción, el nepotismo y el clientelismo \citep{kyriacou2016}.
 
-La individualización es una corriente sociohistórica que transforma las relaciones de los sujetos con la autoridad, así como los soportes y las modalidades que autorizan su ejercicio \citep{araujo2021}. Por ello, parece interesante indagar cómo diferentes variantes de individualismo --resultado de difracciones de los procesos de individualización -- se relacionan con la pérdida de legitimidad de modalidades democráticas de autoridad, privilegiando, por ejemplo, liderazgos más fuertes, eficientes \citep{araujo2022, araujo2022a}, o auténticos \citep{gauthier2021}.
+Estos estudios comparten limitaciones, su carácter exploratorio, o el circunscribir las definiciones de individualismo y colectivismo a un nivel cultural, sin detenerse a analizar las posibles difracciones dentro de una misma sociedad. Además, ninguna de estas investigaciones ha explorado estos fenómenos en Chile o en América Latina. Tampoco se ha explorado la relación con el apoyo a una democracia delegativa que, si bien contiene rasgos autoritarios e iliberales, parece ser un fenómeno diferente \citep{carlin2011, carlin2018}. De tal modo, se buscará abordar esa brecha incluyendo un giro en la conceptualización de individualismo, que busca pasar a entenderlo como el resultado de procesos sociohistóricos de individualización que difieren no solo entre culturas, sino también dentro de una misma sociedad \citep{martuccelli2018}.
+
+La individualización es una corriente sociohistórica que transforma las relaciones de los sujetos con la autoridad, así como los soportes y las modalidades que autorizan su ejercicio \citep{araujo2021}. Por ello, parece interesante indagar cómo diferentes variantes de individualismo -- resultado de difracciones de los procesos de individualización -- se relacionan con la pérdida de legitimidad de modalidades democráticas de autoridad, privilegiando, por ejemplo, liderazgos percibidos como más fuertes, eficientes \citep{araujo2022, araujo2022a}, o auténticos \citep{gauthier2021}.
 
 En visto de todo lo planteado, se propone como pregunta de investigación la siguiente: \textbf{¿Cuál es la relación entre distintos perfiles de individualismo y el apoyo a una democracia delegativa en la sociedad chilena?}
 
@@ -257,7 +251,7 @@ Lo que se traduce al objetivo general de \textbf{Establecer la relación entre d
 \item
   Identificar los perfiles de individualismo presentes en la sociedad chilena
 \item
-  Describir el apoyo a una democracia delegtiva en la sociedad chilena
+  Describir el nivel de apoyo a una democracia delegativa en la sociedad chilena
 \item
   Relacionar las variantes de individualismo con el apoyo a una democracia delegativa en la sociedad chilena
 \end{itemize}
@@ -268,9 +262,9 @@ Lo que se traduce al objetivo general de \textbf{Establecer la relación entre d
 \hypertarget{democracia-delegativa}{%
 \section{Democracia delegativa}\label{democracia-delegativa}}
 
-El concepto de democracia delegativa fue acuñado por el sociólogo argentino Guillermo O'Donnell para describir la situación institucional de las nuevas democracias latinoamericanas surgidas tras el fin de los regímenes autoritarios en la región durante las décadas de 1980 y 1990. Esta forma de democracia se basa en la premisa de que el ganador de las elecciones presidenciales tiene derecho a gobernar sin restricciones, considerándose la encarnación del país y el principal defensor de sus intereses \citep{odonnell1994}. Se diferencian de las democracias representativas consolidadas en que una fuerte responsabilidad vertical (es decir, frente a sus electores) no es acompañada por una rendición de cuentas horizontal, esto es, hacia otras instituciones del Estado \citep{odonnell1994}.
+El concepto de democracia delegativa fue acuñado por el sociólogo argentino Guillermo O'Donnell para describir la situación institucional de las nuevas democracias latinoamericanas surgidas tras el fin de los regímenes autoritarios en la región durante las décadas de 1980 y 1990. Esta forma de democracia se basa en la premisa de que el ganador de las elecciones presidenciales tiene derecho a gobernar sin restricciones, considerándose la encarnación del país y el principal defensor de sus intereses \citep{odonnell1994}. Se diferencian de las democracias representativas consolidadas en que una fuerte responsabilidad vertical (es decir, frente a sus electores) no es acompañada por una rendición de cuentas horizontal, esto es, hacia otras instituciones del Estado \citep{odonnell1994} -- como el congreso, los tribunales de justicia u otros organismo autónomos
 
-Bajo esta definición, Chile se ha tendido a tomar como un contraejemplo, destacando la fuerza de sus instituciones democráticas surgidas tras el fin de la Dictadura \citep{odonnell1994, carlin2018}. Sin embargo, y como se ilustra en la tabla 1, en Chile la rendición de cuentas horizontal no es acompañada por una rendición de cuentas vertical, lo que se traduciría en una \emph{Uprooted democracy} marcada por una profunda crisis de representatividad \citep{odonnell1994}.
+Bajo esta definición, Chile se ha tendido a tomar como un contraejemplo, destacando la fuerza de sus instituciones democráticas surgidas tras el fin de la Dictadura \citep{odonnell1994, carlin2018}. Sin embargo, y como se ilustra en la tabla 1, en Chile la rendición de cuentas horizontal no es acompañada por una rendición de cuentas vertical, lo que se traduciría en una \emph{Uprooted democracy} marcada por una profunda crisis de representatividad \citep{luna2016}.
 
 \begin{table}
 
@@ -288,120 +282,118 @@ Democracia Desarraigada & - & +\\
 \end{tabu}
 \end{table}
 
-Frente a esto, no resulta contradictorio que una democracia caracterizada por su fuerza institucional puedan surgir en la población actitudades de preferencias por este tipo de gobierno \citep{carlin2011, carlin2018}. Según Carlin \citeyearpar{carlin2018}, las personas que apoyan una democracia delegativa en Chile se caracterizan por apoyar a líderes fuertes que unan al país y lo guíen en tiempos de crissi, mostrar orientaciones no-liberales (\emph{iliberals}) hacia los derechos políticos y falta de compromiso hacia los derechos humanos. Sin embargo, y quizás paradójicamente, este perfil sigue prefiriendo la democracia sobre otras formas de gobierno.
+Frente a esto, no resulta contradictorio que en una democracia caracterizada por su fuerza institucional puedan surgir en la población actitudes de preferencias hacia una democracia delegativa \citep{carlin2011, carlin2018}. Según Carlin \citeyearpar{carlin2018}, las personas que apoyan una democracia delegativa en Chile se caracterizan por apoyar a líderes fuertes que unan al país y lo guíen en tiempos de crisis, mostrar orientaciones no-liberales (\emph{iliberals}) hacia los derechos políticos y falta de compromiso hacia los derechos humanos. Sin embargo, y quizás paradójicamente, este perfil sigue prefiriendo la democracia sobre otras formas de gobierno.
 
-Los liderazgos fuertes, de tal manera, se constituyen como una de las dimensiones fundamentales de las democracias delegativas. Subyace aquí la idea de una nación concebida como un ser orgánico, un verdadero Leviatán del que líder es su cabeza, y cuya función es ``sanar la nación uniendo sus fragmentos dispersos en un todo harmonioso'' \citep[pp.60]{odonnell1994}.
+Los liderazgos fuertes, de tal manera, se constituyen como una de las dimensiones fundamentales de las democracias delegativas. Subyace aquí la idea de una nación concebida como un ser orgánico. El Presidente o el líder se transforma, así, en una especie de cabeza del Leviatán, cuya función es ``sanar la nación uniendo sus fragmentos dispersos en un todo armonioso'' \citep[p.60]{odonnell1994}.
 
-De lo anterior, se desprende un segunda característica esencial de esta vrariante de democracia. El líder, para cumplir su cometido, debe saber combinar elementos emocionales y carismáticos con otros altamente técnicos, precisamente bajo la justificación de ``sanar'' la nación \citep{odonnell1994}. Esta impronta tecnocrática mezclada con elementos emocionales no es del todo desconocidas en Chile, como se observaría en el tipo ideal portaliano \citep{araujo2013}, una forma sociohistórica de ejercicio de la autoridad en Chile. Por otro lado, podría también recordar a la discusión sobre el surgimiento de actitudes tecnocráticas y tecnopopulistas en países europeos y su relación, muchas veces contradictoria, con la democracia \citep{chiru2022, ganuza2020, pilet2023}.
+De lo anterior, se desprende un segunda característica esencial de esta variante de democracia. El líder, para cumplir su cometido, debe saber combinar elementos emocionales y carismáticos con otros altamente técnicos, precisamente bajo la justificación de ``sanar'' a la nación \citep{odonnell1994}. Esta impronta tecnocrática mezclada con elementos emocionales no es del todo desconocidas en Chile, como se observaría en el tipo ideal portaliano \citep{araujo2013}, una forma sociohistórica de ejercicio de la autoridad en Chile. Por otro lado, podría también recordar a la discusión sobre el surgimiento de actitudes tecnocráticas y tecnopopulistas en países europeos y su relación, muchas veces contradictoria, con la democracia \citep{chiru2022, ganuza2020, pilet2023}.
 
 \hypertarget{individualismo}{%
 \section{Individualismo}\label{individualismo}}
 
-\hypertarget{individidualismo-colectivismo-como-una-dimensiuxf3n-de-la-cultura}{%
-\subsection{Individidualismo-Colectivismo como una dimensión de la cultura}\label{individidualismo-colectivismo-como-una-dimensiuxf3n-de-la-cultura}}
+\hypertarget{individualismo-colectivismo-como-una-dimensiuxf3n-de-la-cultura}{%
+\subsection{Individualismo-Colectivismo como una dimensión de la cultura}\label{individualismo-colectivismo-como-una-dimensiuxf3n-de-la-cultura}}
 
-El fenómeno del individualismo ha sido abordado principalmente desde la psicología cultural, particularmente, de la comparación entre culturas, y generalmente en conjunto y oposición al colectivismo. Desde este punto de vista, de tal modo, existirían culturas (y, se debe notar, cultura se entiende casi siempre como sinónimo de países) que son individualista y otras que son colectivistas.
+El fenómeno del individualismo ha sido abordado principalmente desde la psicología cultural, particularmente, desde la comparación entre culturas, y generalmente en conjunto y oposición al colectivismo. Desde este punto de vista, existirían culturas (y, se debe notar, cultura se entiende casi siempre como sinónimo de país) que son individualistas y otras que son colectivistas.
 
-Los conceptos de individualismo y colectivismo tienen un larga tradición intelectual, pero su auge actual se remonta a los estudios de Hofstede sobre la cultura laboral en trabajadores de IBM en 39 países durante la década de 1980 \citep{oyserman2002}. Hofstede definió cuatro dimensiones culturales: ``distancia de poder'', ``masculinidad'', ``aversión a la incertidumbre'' e ``individualismo'', con esta última captando la mayor atención de los investigadores \citep{brewer2007}.
+Para Hofstede, individualismo y colectivismo representan los polos opuestos de un continuo unidimensional que permite distinguir entre culturas individualistas y culturas colectivistas \citep{yoon2010}. A pesar de que el propio Hofstede advierte que estas definiciones aplican 1) a un nivel cultural, pero no al individual; y 2) son procesos dinámicos en que las culturas pueden transformarse, estás recomendaciones no siempre han sido seguidas por los investigadores que han retomado esta perspectiva.
 
-Desde la conceptualización de Hofstede, Individualismo-Colectivismo -- definidos a un nivel cultural -- conforman los dos polos de un único espectro \citep{oyserman2002}. Las sociedades individualistas se caracterizan por lazos poco estrechos entre individuos, de quienes se espera se hagan cargo de si mismos y dde su familia inmediata. La sociedades colectivistas, en tanto, se caracterizar porque sus miembros están integrados desde su nacimiento a grupos fuertemente cohesionados que los protegen a lo largo de sus vida a cambio de una lealtad incuestionada \citep{yoon2010}.
+Frente a esto, se han hecho intentos de elaborar conceptualizaciones alternativas, siendo la del \emph{self-construal} \citep{cross2011} una de las más populares. \emph{Self-construal}, que puede ser traducido al español como autoconstrucción o autoconcepción, se refiere a las formas en que el individuo se concibe a sí mismo, ya sea de forma independiente o interdependiente de sus grupos. Esta propuesta se diferencia de la de Hofstede en que es un constructo bidimensional, donde un eje representa al individualismo y otro al colectivismo. Ahora bien, pese a que se ha insistido en que el \emph{self-construal} y el individualismo-colectivismo son fenómenos diferentes, su operacionalización muchas veces se intercepta \citep{cross2011}. Por lo demás, se mantiene una interpretación más o menos explícita que relaciona concepciones independientes con culturas individualistas \citep{cross2011, voronov2002}
 
-A pesar de que el propio Hofstede advierte que estas definiciones aplican 1) a un nivel cultural, pero no al individual; y 2) son procesos dinámicos en que las culturas pueden transformarse, estás recomendaciones no siempre han sido seguidas por los investigadores que han retomado esta perspectiva. Frente a esto, se han hecho intentos de elaborar conceptualizaciones alternativas, siendo la del \emph{self-costrual} \citep{cross2011} una de las más populares. \emph{Self-construal}, que puede ser traducido al español como autoconstrucción o autoconcepción, se refiere a las formas en que el individuo se concibe a sí mismo, ya sea de forma independiente o interdependiente sus grupos. Esta propuesta se diferencia de la de Hofstede en que es un constructo bidimensional. Ahora bien, pese a que se ha insistido que el \emph{self-construal} y el individualismo-colectivismo son fenómenos diferentes, su operacionalización muchas veces se intercepta \citep{cross2011}. Por lo demás, se mantiene una interpretación más o menos explícita que relaciona una concepción independiente con culturas individualistas \citep{cross2011, voronov2002}
+Por otro lado, el uso de individualismo-colectivismo ha sido criticado por su falta de claridad conceptual, calificándolo como un concepto \emph{catch-all}, que se utiliza por defecto para explicar diferencias culturales \citep{voronov2002}. Subyace aquí una dimensión normativa: El individualismo se ha entendido como una característica esencial de la cultura estadounidense y anglosajona, y se asocia constantemente a la modernidad y al desarrollo \citep{voronov2002, wang2010, martuccelli2010}. Individualismo, así, suele tener una connotación positiva; colectivismo, una negativa \citep{moemeka1998}, sobre todo en Estados Unidos y otros países anglosajones. De ahí que no sea de extrañar que individualismo y colectivismo puedan recordar a las distinciones establecidas por la sociología clásica: sociedad mecánica-sociedad orgánica; sociedad tradicional-sociedad moderna; o comunidad-sociedad.
 
-Por otro lado, el uso de individualismo-colectivismo ha sido criticado por su falta de claridad conceptual, calificandolo como un concepto \emph{catch-all}, que se ha por defecto para explicar diferencias culturales \citep{voronov2002}. Subyace aquí una dimensión normativa: El individualsimo se ha entendido como una dimensión esencial de la cultura estadounidense y anglosajana, y se asocia constantemente a la modernidad y al desarollo \citep{voronov2002, wang2010}. Individualismo, así, suele tener una connotación positiva; colectivismo, una negativa \citep{moemeka1998}, sobre todo en Estados Unidos y otros países anglosajones. De ahí que no sea de extrañar que individualismo y colectivismo puedan recordar, por ejemplo, las distinción que la sociología clásica estableció entre comunidad y sociedad, donde la primera ``por su débil diferenciación social no daría lugar sino a una insuficiente individualización debido a que la semejanza entre sus miembros se impone'' \citep[Segundo relato: Insuficiencias y anomalías, párrafo 2]{martuccelli2010}.
+Esta falta de claridad conceptual queda patente en el metaestudio de Oyserman y colegas \citeyearpar{oyserman2002}, quienes a través de un análisis de contenido a las escalas más utilizadas para medir estos fenómenos, descubren que individualismo puede referirse a hasta 6 cosas distintas (independencia, orientación al logro, competencia, unicidad, autoconocimiento y comunicación directa); mientras que colectivismo a otras 8 (relaciones, pertenencia, deber, armonía, búsqueda de consejo, contextualidad, jerarquía y grupos). Brewer y Chen \citeyearpar{brewer2007} van más allá, indicando que en realidad ni siquiera hay verdadera simetría en las formas en que individualismo y colectivismo están operacionalizados: Así, mientras que los ítems para medir el primero suelen referirse a la identidad y la agencia de los individuos; el segundo se suele medirse como un sistema de valores.
 
-Esta falta de claridad conceptual queda patente en el metaestudio de Oyserman y colegas \citeyearpar{oyserman2002}, quienes a través de un análisis de contenido a las escalas más utilizadas para medir estos fenómenos puede referirse a hasta 6 cosas distintas (independencia, orientación al logro, competencia, unicidad, autoconocimiento y comunicación directa); mientras que colectivismo a otras 8 (relaciones, pertenencia, deber, armonía, búsqueda de consejo, contextualidad, jerarquía y grupos). Brewer y Chen \citeyearpar{brewer2007} van más allá, indicando que en realidad ni siquiera hay verdadera simetría en las formas en que individualismo y colectivismo están operacionalizados: Así, mientras que los ítem para medir el primero suelen referirse a la identidad y la agencia de los individuos; el segundo se suele medir como un sistema de valores.
+También se ha puesto atención a la falta de claridad de quiénes son los colectivos del colectivismo, no haciendo una clara distinción entre grupos, colectivos y comunidades. Un ejemplo de esta indefinición es el problema del familiarismo: La familia, de alguna forma u otra, se ha integrado en las definiciones y operacionalizaciones tanto de individualismo\footnote{Notoriamente, la definición de individualismo de Hofstede incluye una mención a la familia. Brewer y Venaik \citeyearpar{brewer2011}, agregan que esta operacionalización de colectivismo poco tiene que ver con su conceptualización teórica. Frente a ello, proponen renombrar la escala como una que distingue, más bien, entre orientaciones personales (\emph{self-orientation}) y orientaciones laborales (\emph{work-orientation}).} como de colectivismo \citep{oyserman2002}.
 
-También se ha puesto atención a la falta de claridad de quiénes son los colectivos del colectivismo, no haciendo una clara distinción entre grupos, colectivos y comunidades. Un ejemplo de esta indefinición es el problema del familiarismo: La familia, de alguna forma u otra, se ha integrado en las definiciones y operacionalizaciones tanto de individualismo como de colectivismo \citep{oyserman2002}.
+Para Moemeka \citeyearpar{moemeka1998}, los colectivos se forman por elección mientras que las comunidades son preexistentes a las personas. De ahí que no haya verdadera contradicción entre colectivismo e individualismo. Por ejemplo, los partidos políticos y movimientos sociales -- en fin, la sociedad civil entendida como el libre juego de los intereses individuales y privados \citep{arribas1999} -- tienen típicamente mayor desarrollo en sociedades denominadas como individualistas.
 
-Notoriamente, la definición de individualismo de Hofstede incluye una mención a la familia. Brewer y Venaik \citeyearpar{brewer2011}, además, agregar que la operacionalización de colectivismo poco tiene que ver con su conceptualización teórico. Frente a ello, proponen renombrar la escala como una que distingue, más bien, entre orientaciones personales (\emph{self-orientation}) y orientaciones laborales (\emph{work-orientation}).
+Frente a lo anterior, Moemeka \citeyearpar{moemeka1998} apunta a que más que colectivismo se debería hablar de comunalismo. Con todo, Brewer y Chen \citeyearpar{brewer2007}, mediante un metaanálisis, concluyen que las escalas más populares no miden comunidades, según lo definido por Moemeka, sino relaciones interpersonales. Por ello, proponen distinguir esta dimensión de la colectiva propiamente tal, que se referiría a grupos enteros, sean étnicos, religiosos o nacionales.
 
-Para Moemeka \citeyearpar{moemeka1998}, los colectivos se forman por elección mientras que las comunidades son preexistentes a las personas. De ahí que no haya verdadera contradicción entre colectivismo e individualismo. Por ejemplo, los partidos políticos y movimientos sociales colectivos -- en fin, la sociedad civil entendida como el libre juego de los intereses individuales y privados \citep{arribas1999} -- tienen mayor típicamente mayor desarrollo en sociedades denominadas como individualistas.
+Estas brechas conceptuales podrían explicar las ``anomalías'' observadas en varios de estos estudios, como que los individualistas pueden ser tanto o más colectivistas que los colectivistas mismos \citep{oyserman2002}, o que en determinados contextos los colectivistas actúan de manera individualista \citep{voronov2002}. A nivel agregado, Chile podría considerarse como un claro ejemplo de estas incongruencias: Bajo la definición de Hofstede, la sociedad chilena ha sido clasificada como colectivistas \citep{rojas2008}. Esto en congruente con observaciones que han constatado que el colectivismo en Chile es alto, tanto si se mide como el opuesto a individualismo \citep{oyserman2002} como si se entiende como \emph{self-construal} interdependiente \citep{benavides2020}. Pese a esto, también es cierto que los niveles de individualismos observado en el país llegan a ser más altos, incluso, que aquellos observados en Estados Unidos \citep{oyserman2002} o Noruega \citep{kolstad2009}.
 
-Frente a lo anterior, Moemeka \citeyearpar{moemeka1998} apunta a que más que colectivismo se debería hablar de comunalismo. Con todo, Brewer y Chen \citeyearpar{brewer2007}, mediante un metanálisis, concluyen que las escalas más populares no miden comunidades, según lo definido por Moemeka, sino relaciones interpersonales. Por ello, proponen distinguir está dimensión de la colectiva propiamente tal, que se referiría a grupos enteros, sean étnicos, religiosos o nacionales.
+Esto abre la pregunta de si Chile realmente es una sociedad colectivista, y si no lo es, ¿hasta qué punto es una sociedad individualista? Responder esta pregunta implica el riesgo de salir de un relato de insuficiencia (``Chile no es un país individualista''), solo para caer en un relato del \emph{ni, ni} \citep{martuccelli2010}: ``Chile no es \emph{ni} individualista \emph{ni} colectivista''.
 
-Estas brechas conceptuales podrían explicar las ``anomalías'' observadas en varios de estos estudios, como que los individualistas pueden ser tanto o más colectivistas que los colectivistas \citep{oyserman2002}, o que en determinados contextos los colectivistas actúan de manera individualista \citep{voronov2002}. A nivel agregado, Chile podría considerarse como un claro ejemplo de estas incongruencias: Tradicionalmente entendida como una sociedad colectivista \citep{rojas2008}, el colectivismo en Chile es alto \citep{oyserman2002}, incluso más que en otras sociedades típicamente colectivistas como Corea del Sur. Pese a esto, los niveles de individualismo en Chile pueden ser incluso más altos que los observados en Estados Unidos \citep{oyserman2002} o Noruega \citep{kolstad2009}.
-
-Esto abre la pregunta de si Chile realmente es una sociedad colectivista, y si no lo es, ¿hasta que punto es que una sociedad individualista? Responder esta pregunta implica el riesgo de salir de un relato de insuficiencia (``Chile no es un país individualista''), solo para caer en un relato del \emph{ni, ni} \citep{martuccelli2010}: ``Chile no es \emph{ni} individualista \emph{ni} colectivista''. Una afirmación correcta desde la perspectiva teórica hasta aquí esbozada, pero preocupantemente insuficiente en el esfuerzo de una descripción sociológica de la sociedad chilena.
+La teoría social avanza, siguiendo una clásica argumentación parsoniana \citep{bouzanis2019}, mediante la formulación de conceptos positivos que permitan superar las categorías residuales de un sistema teórico. Países como Chile se encuentran en esta posición, pues su realidad no se ajusta claramente a las categorías positivas de la perspectiva hasta aquí revisada \citep{bouzanis2019}. Si una cultura que no es ni colectivista ni individualista, surge la pregunta, ¿qué es exactamente? La incapacidad de responder esta pregunta representa una limitación significativa en el esfuerzo de describir sociológicamente la sociedad chilena. Como mínimo, la tarea de los científicos sociales debería ser la de poder nombrar a nuestras sociedades.
 
 Para escapar de esta trampa es necesario dar un giro hacia una perspectiva teórica que entregue el lenguaje para describir el individualismo chileno como algo más que una simple categoría residual. Como se argumentará en la siguiente sección, la sociología del individuo podría bien servir como la puerta de entrada para este ejercicio.
 
 \hypertarget{individualismo-desde-la-sociologuxeda-del-individuo}{%
 \subsection{Individualismo desde la Sociología del Individuo}\label{individualismo-desde-la-sociologuxeda-del-individuo}}
 
-Resulta algo sorprendente que en la literatura revisada en la sección anterior no se haga mención. Mal que mal, una forma de entender la individualización es como un individualismo institucionalizado: Esto es, como un proceso social en que ``las instituciones cardinales de la sociedad moderna -- los derechos civiles, políticos y sociales básicos, pero también el empleo remunardo y la formación y movilidad que éste conlleva -- están orientado la individuo y no al grupo'' \citep[p.~32]{beck2003}.
+Cabe destacar que en la literatura revisada en la sección anterior no se hace mención a la teoría de la individualización. Lo que se planteará a continuación es, pues, que está tradición teórica puede entregar elementos importante para la comprensión del individualismo en Chile. Mal que mal, una forma de entender la individualización es como un individualismo institucionalizado: Esto es, como un proceso social en que ``las instituciones cardinales de la sociedad moderna -- los derechos civiles, políticos y sociales básicos, pero también el empleo remunerado y la formación y movilidad que éste conlleva -- están orientados al individuo y no al grupo'' \citep[p.~32]{beck2003}.
 
-De forma suscinta, la teoría de la individualización surge en Europa a mediados de los años 80 para explicar las trasformaciones aparejadas a lo que se ha denominado como \emph{modernidad reflexiva}, donde se observaría un proceso de distanciamiento entre agencia y estructura, dejando a un individuo cada vez más responsable de sí mismo y de dar respuestas las incertidumbres producidas en el mundo social \citep{beck2003}. Desde fines de los años 90, está teoría ha sido uno de los marcos analíticos preferidos por las ciencias sociales en Chile para dar cuenta de las transformaciones culturales, sociales y económicas producidas en el país durante las últimas décadas \citep{yopo2013}.
+De forma sucinta, la teoría de la individualización surge en Europa a mediados de los años 80 para explicar las trasformaciones aparejadas a lo que se ha denominado como \emph{modernidad reflexiva}, donde se observaría un proceso de distanciamiento entre agencia y estructura, dejando a un individuo cada vez más responsable de sí mismo y de dar respuestas a las incertidumbres producidas en el mundo social \citep{beck2003}. Desde fines de los años 90, está teoría ha sido uno de los marcos analíticos preferidos por las ciencias sociales en Chile para dar cuenta de las transformaciones culturales, sociales y económicas producidas en el país durante las últimas décadas \citep{yopo2013}.
 
-El marco analítico de esta investigación se sostiene particularmente en el trabajo de Danilo Martuccelli, quien tanto en su obra individual \citetext{\citeyear{martuccelli2010}; \citeyear{martuccelli2018}}, como en colaboración con Kathya Araujo \citetext{\citeyear{araujo2014}; \citeyear{araujo2020}; \citeyear{araujo2012}}, ha hecho esfuerzos contundentes para describir la forma particular del individualismo en Chile y América Latina. Tal como en la sección anterior se mostró la ambigüedad con que se definen los colectivos del colectivismo, a partir del trabajo de Martuccelli es posible revelar la noción de individuo que subyace a las conceptualizaciones clásicas de individualismo.
+Dentro de esta tradición, el marco analítico de esta investigación se sostiene principalmente en la sociología del individuo desarrollada por Danilo Martuccelli, quien tanto en su obra individual \citetext{\citeyear{martuccelli2010}; \citeyear{martuccelli2018}}, como en colaboración con Kathya Araujo \citetext{\citeyear{araujo2014}; \citeyear{araujo2020}; \citeyear{araujo2012}}, ha hecho esfuerzos contundentes para describir la forma particular del individualismo en Chile y América Latina. Tal como en la sección anterior se mostró la ambigüedad con que se definen los colectivos del colectivismo, a partir del trabajo de Martuccelli es posible revelar la noción de individuo que subyace a las conceptualizaciones clásicas de individualismo.
 
-Martuccelli \citeyearpar{martuccelli2010} argumenta que la representación del individuo que se volvió hegemónica para la modernidad es el individuo que es soberano es al menos dos acepciones. En primer lugar, porque se espera de este que sea dueño de sí mismo, independiente, autónomo y singular. En segundo lugar, porque es un ente racional capaz de legitimar el orden social y la soberanía colectiva.
+Martuccelli \citeyearpar{martuccelli2010} argumenta que la representación del individuo que se volvió hegemónica para la modernidad es un individuo que es soberano en al menos dos acepciones. En primer lugar, porque se espera de este que sea dueño de sí mismo, de manera independiente, autónoma y singular. En segundo lugar, porque es un ente racional capaz de legitimar el orden social y la soberanía colectiva.
 
-Es este individuo quien se encuentra en el centro de un modelo de representación de la vida social que lo coloca en el centro del pacto social \citep{martuccelli2010, martuccelli2018}. Es este modelo lo que clásicamente se entiende como individualismo. Un individualismo institucional, precisa Martuccelli \citeyearpar{martuccelli2018} que se caracteriza por 3 rasgos fundamentales:
+Es este individuo quien se encuentra en el vértice de un modelo de representación de la vida social que lo coloca en el centro del pacto social \citep{martuccelli2010, martuccelli2018}. Es este modelo lo que clásicamente se entiende como individualismo. Un individualismo institucional, precisa Martuccelli \citeyearpar{martuccelli2018} que se caracteriza por 3 rasgos fundamentales:
 
 \begin{itemize}
 \tightlist
 \item
   Una separación radical entre el holismo y el individualismo
 \item
-  Una concepciones atomizada del individuo. Es decir, la idea de los individuos son prexistentes de sus lazos sociales.
+  Una concepción atomizada del individuo. Es decir, la idea de que los individuos son prexistentes de sus lazos sociales.
 \item
   La preeminencia del rol de las instituciones en los procesos de individuación, de modo que la individualidad deja de ser percibida como una desviación y se convierte en el modelo institucional a encarnar.
 \end{itemize}
 
-Las divergencias a este modelo observado en otras regiones del mundo, ha llevado normalmente a la negación de la existencia de individuos, individualización e individualismo en éstas \footnote{Y también, como así precisa Martuccelli, a las mujeres, las diversidades sexuales o las personas con discapacidad.}. Como se menciono anteriormente, se esconde aquí un aspecto normativo que asocia al individualismo y al individuo soberano con el orden social moderno (occidental), y con la tradición a todas sus desviaciones \citep{martuccelli2018}.
+Las divergencias a este modelo observado en otras regiones del mundo, ha llevado normalmente a la negación de la existencia de individuos, individualización e individualismo en éstas\footnote{Pero también de las mujeres, las diversidades sexuales, las personas con discapacidad y las minorías étnicas dentro de los propios países del norte global.}. Como se mencionó anteriormente, se esconde aquí un aspecto normativo que asocia al individualismo y al individuo soberano con el orden social moderno-occidental, y con la sociedad tradicional a todas sus desviaciones \citep{martuccelli2018}.
 
-Abordar el fenómeno del individualismo desde la teoría de la individualización presenta la ventaja de que permite desembarazarse de esta conceptualización unívoca de individuo, así como de la ambigüedad y multiplicidad con que se define el colectivismo. Para ello, se propone una definición que permita conceptualizar el fenómeno para la sociedad chilena.
+Abordar el fenómeno del individualismo desde la una sociología del individuo presenta la ventaja de que permite desembarazarse de esta conceptualización unívoca de individuo. También, presenta una salida a las definiciones múltiples y ambigüas de colectivismo, como se vio en la sección anterior. Frente a ello, se propone una definición que permita teorizar el fenómeno para la sociedad chilena.
 
-Se entenderá como individualismo a los modelos de representación de la vida social que definen el rol del individuo en la sociedad. Bajo tales modelos, los individuos deben hacerse cargo de sus propias vidas en condiciones diversas de legitimidad de la acción individual, distintas representaciones culturales y autoconcepciones del individuo, y diferentes valores e imperativos estructuralmente producidos.
+Se entenderá así como individualismo a los modelos de representación de la vida social que definen el rol del individuo en la sociedad. Bajo tales modelos, los individuos deben hacerse cargo de sus propias vidas en condiciones diversas de legitimidad de la acción individual, distintas representaciones culturales y autoconcepciones del individuo, y diferentes valores e imperativos estructuralmente producidos.
 
-Bajo este marco analítico, el colectivismo podría entenderse como un conjunto de modalidades de individualismo propias de sociedades en que la acción individual puede estar menos legitimada o en que los individuos construyen su identidad en torno a la pertenencia a una colectividad. En ningún, del tal modo, sería incompatible con la idea de individualismo, pues estas colectividades son grupos de libre elección conformadas por individuos que persiguen objetivos individuales a través de la acción colectiva \citep{arribas1999, moemeka1998}. Zygmunt Bauman teoriza en este sentido, argumentando que los movimientos de trabajadores durante los siglos XIX y XX son resultado de procesos de individualización desiguales en esas sociedades:
+Bajo este marco analítico, el colectivismo podría entenderse como un conjunto de modalidades de individualismo propias de sociedades en que la acción individual puede estar menos legitimada, en que los individuos construyen su identidad en torno a la pertenencia a una colectividad, o en que la autonomía no se constituye como el principal valor en torno a los que se definen los individuos. En ningún caso, sería incompatible con la idea de individualismo, pues estas colectividades son grupos de libre elección \footnote{Por ejemplo, partidos políticos, movimientos sociales o sindicatos. Pero, también, un matrimonio o un grupo de amigos.} conformadas por individuos que persiguen objetivos individuales a través de la acción colectiva \citep{arribas1999, moemeka1998}. Zygmunt Bauman teoriza en este sentido, argumentando que los movimientos de trabajadores durante los siglos XIX y XX son resultado de procesos de individualización desiguales en esas sociedades:
 
 \begin{quote}
-Las personas con menos recursos, y por tanto con menos elección, tenían que compensar esta carencia individual con la fuerza de los números, es decir, cerrando fiales y participando en acciones colectivas. Como ha dicho Claus Offe, la acción colectiva y orientada a la clase llegó a los que estaban en la parte baja de la escala social de manera tan \emph{natural} y \emph{obvia} como llegaba a sus jefes y empresarios la búsqueda individual de las metas vitales'' \citep[p.~23]{bauman2003}.
+Las personas con menos recursos, y por tanto con menos elección, tenían que compensar esta carencia individual con la fuerza de los números, es decir, cerrando filas y participando en acciones colectivas. Como ha dicho Claus Offe, la acción colectiva y orientada a la clase llegó a los que estaban en la parte baja de la escala social de manera tan \emph{natural} y \emph{obvia} como llegaba a sus jefes y empresarios la búsqueda individual de las metas vitales'' \citep[p.~23]{bauman2003}.
 \end{quote}
 
-Ya en la argumentación de Bauman se puede divisar un punto clave en este marco analítico: El individualismo institucional es solo una modalidad entre varias, con divergencias y difracciones. El propio Martuccelli \citeyearpar{martuccelli2018} esquematiza una descripción de diversas variantes de individualismo que serían propias de las sociedades africanas (el individualismo comunitario), asiáticas (el individualismo ontorrelacional) y latinoamericanas (el individualismo agéntico). Pero, más interesante aún es que permite aprehender las difracciones dentro de una misma sociedad, y que esto es así incluso en las sociedades industriales en que emergió el modelo del individualismo institucional: El individualismo de los burgueses no era el mismo que el individualismo de los obreros.
+Ya en la argumentación de Bauman se puede divisar un punto clave en este marco analítico: El individualismo institucional es solo una modalidad entre varias, con divergencias y difracciones. El propio Martuccelli \citeyearpar{martuccelli2018} esquematiza una descripción de diversas variantes de individualismo que serían propias de las sociedades africanas (el individualismo comunitario), asiáticas (el individualismo ontorrelacional) y latinoamericanas (el individualismo agéntico). Pero, una lectura aún más interesante del pasaje citado es que permite vislumbrar las difracciones dentro de una misma sociedad, y que esto es así incluso en las sociedades industriales en que emergió el modelo del individualismo institucional: El individualismo de los burgueses no era el mismo que el individualismo de los obreros.
 
-Las diferencias raciales en las escalas de individualismo-colectivismo en Estados Unidos \citep{oyserman2002, komarraju2008} entregan evidencia empírica a esta forma de entender el constructo: Mientras entre europeos-estadounidenses no existe relación significativa entre individualismo y colectivismo, la asociación si es observable entre afroamericanos \citep{komarraju2008}. Se debe recordar, además, que ya en los años 80, en su clásico \emph{Habits of the Hearts}, Robert Bellah y su equipo describían dos tradiciones de individualismo en los Estados Unidos. También en Chile, mediante un análisis de conglomerados a la escala de Triandis (que distingue entre individualismo-colectivismo vertical y horizontal), se lograron identificar 5 grupos (colectivistas independientes, colectivistas puros, colectivistas idiocéntricos, individualistas alocéntricos y renegados) \citep{rojas2008}. Pensar en distintas modalidades individualismo también permite dar una salida al problema del familiarismo identificado por Oyserman y colegas \citeyearpar{oyserman2002} \footnote{La misma lógica puede aplicar al problema de la jerarquía y la competencia también identificada en ese estudio \citep{oyserman2002}.}: No se trata de si el familiarismo es una característica propia del individualismo o del colectivismo, sino que hay individualismos que definen de forma diversa la relación del individuo con sus familias.
+Las diferencias raciales en las escalas de individualismo-colectivismo en Estados Unidos \citep{oyserman2002, komarraju2008} entregan evidencia empírica a esta forma de entender el constructo: Mientras entre europeos-estadounidenses no existe relación significativa entre individualismo y colectivismo, la asociación si es observable entre afroamericanos \citep{komarraju2008}. Se debe recordar, además, que ya en los años 80, en su clásico \emph{Habits of the Hearts}, Robert Bellah y su equipo describían dos tradiciones de individualismo en los Estados Unidos. También en Chile, mediante un análisis de conglomerados a partir de la escala de Triandis (que distingue entre individualismo-colectivismo vertical y horizontal), se lograron identificar 5 grupos (colectivistas independientes, colectivistas puros, colectivistas idiocéntricos, individualistas alocéntricos y renegados) \citep{rojas2008}. Pensar en distintas modalidades de individualismo también permite dar una salida al problema del familiarismo identificado por Oyserman y colegas \citeyearpar{oyserman2002} : No se trata de si el familiarismo es una característica propia del individualismo o del colectivismo, sino que hay individualismos que definen de forma diversa la relación del individuo con sus familias\footnote{La misma lógica puede aplicar al problema de la jerarquía y la competencia también identificada en ese estudio \citep{oyserman2002}.}.
 
-En los párrafos que siguen, se dará -- brevemente -- algunas pequeñas precisiones sobre las dimensiones que se han identificado como componentes del fenómeno del individualismo:
+\hypertarget{dimensiones-analuxedticas-del-individualismo}{%
+\subsubsection{Dimensiones analíticas del individualismo}\label{dimensiones-analuxedticas-del-individualismo}}
+
+En los párrafos que siguen se pasará a explicar las dimensiones que se desprenden de la definición aquí planteada
 
 \hypertarget{legitimidad-de-la-individualidad}{%
 \subsubsection{Legitimidad de la Individualidad}\label{legitimidad-de-la-individualidad}}
 
 Está dimensión se refiere a las creencias sobre la agencia de los individuos en el mundo social \citep{brewer2007}, así como la valoración de la individualidad. Por individualidad aquí se entiende al ``grado de diferenciación o de singularización reconocido o legítimamente alcanzado por un individuo dentro de un colectivo'' \citep[p.~10]{martuccelli2018}.
 
-Bajo el modelo del individualismo institucional, la individualidad deja de ser una anomalía para pasar a ostentar altos niveles de legitimidad \citep{martuccelli2018}. Sin embargo, esto se vería tensionado, por ejemplo, por la acentuación de conductas individualizadas sin ruptura de lazos comunitarios en sociedad africanas -- Modelo que Martuccelli \citeyearpar{martuccelli2018} denomina como indivudalismo comunitario. Más cercano a la realidad nacional, Araujo y Martuccelli constantan que la individualidad ha sido históricamente visto con sospecha en sociedades latinoamericanas \citep{araujo2020a}.
+Bajo el modelo del individualismo institucional, la individualidad deja de ser una anomalía para pasar a ostentar altos niveles de legitimidad \citep{martuccelli2018}. Sin embargo, esto se vería tensionado, por ejemplo, por la acentuación de conductas individualizadas sin ruptura de lazos comunitarios en sociedad africanas -- Modelo que Martuccelli \citeyearpar{martuccelli2018} denomina como individualismo comunitario. Más cercano a la realidad nacional, Araujo y Martuccelli constatan que la individualidad ha sido históricamente vista con sospecha en sociedades latinoamericanas \citep{araujo2020a}.
 
-Ahora bien, se debe resaltar que el individualismo ha sido institucionalizado principalmente en 3 esferas: la económica, la política y la afectiva \citep{cortois2018, martuccelli2018}. Esto se refleja en la existencia de 3 guiones para el individualismo institucional; en la esfera económica, un individualismo utilitario; en la política, un individualismo moral; y en la afectiva, un individualismo expresivo \citep{cortois2018}. Es importante hacer esta distinción, ya que en una misma sociedad pueden encontrtarse grupos e individuos que legitimen el individualismo en algunas esferas pero no en otras. Por ejemplo, en América del Norte se ha observado que grupos conservadores apoyan la determinación individual en la economía y en la elección de escuela, pero no en el derecho al aborto o a la eutanasia \citep{kemmelmeier2003}.
+Ahora bien, se debe resaltar que el individualismo ha sido institucionalizado principalmente en 3 esferas: la económica, la política y la afectiva \citep{cortois2018, martuccelli2018}. Esto se refleja en la existencia de 3 guiones para el individualismo institucional; en la esfera económica, un individualismo utilitario; en la política, un individualismo moral; y en la afectiva, un individualismo expresivo \citep{cortois2018}. Es importante hacer esta distinción, ya que en una misma sociedad pueden encontrarse grupos e individuos que legitimen el individualismo en algunas esferas pero no en otras. Por ejemplo, en América del Norte se ha observado que grupos conservadores apoyan la autodeterminación individual en la economía y en la elección de escuelas, pero no en el derecho al aborto o a la eutanasia \citep{kemmelmeier2003}.
 
-El individualismo utilitario es aquel que entiende al individuo como propietario de su vid y sus habilidades, las que son susceptibles a ser intercambiadas en el libre mercado. La acción se entiende aquí como estratégica, es decir, como medios para conseguir fines individuales. El otro, de tal modo, no tiene un valor intrínseco, sino como un medio parat tales fines \citep{cortois2018}. En Chile, este tipo de individualismo podría asociarse a la instauración del neoliberalismo y la emergencia de un \emph{homo neoliberalis}, pincipalmente mediante el acceso al consumo \citep{araujo2012, araujo2020a}. Su legitimidad, con todo, está lejos de ser univoca, como se puede observar en la relación ambigua de los chilenos frente al oportunismo \citep{araujo2014} y frente al consumismo \citep{araujo2012}.
+El individualismo utilitario es aquel que entiende al individuo como propietario de su vida y sus habilidades, las que son susceptibles a ser intercambiadas en el libre mercado. La acción se entiende aquí como estratégica, es decir, como medios para conseguir fines individuales. El Otro, de tal modo, no tiene un valor intrínseco, sino como un medio para tales fines \citep{cortois2018}. En Chile, este tipo de individualismo podría asociarse a la instauración del neoliberalismo y la emergencia de un \emph{homo neoliberalis}, principalmente mediante el acceso al consumo \citep{araujo2012, araujo2020a}. Su legitimidad, con todo, está lejos de ser univoca, como se puede observar en la relación ambigua de los chilenos frente al oportunismo \citep{araujo2014} y al consumismo \citep{araujo2012}.
 
-El individualismo moral, en cambio, enfatiza la obligación moral de tratar al otro como un fin en sí mismo. La institucionalización de esta idea se puede observar en la declaraciones de derechos humanos, civiles y sociales, que reconocen a los individuos como iguales y autónomos \citep{cortois2018}. En América Latina, este tipo de individualismo ha se puede observar en la valorización de los derechos humanos tras las dictaduras del siglo XX \citep{araujo2020a}. En Chile, además, se podría observar en las aspiraciones por la democratización y horizontalización de lazo social, así como en las demandas por dignidad \citep{araujo2012}.
+El individualismo moral, en cambio, enfatiza la obligación moral de tratar al Otro como un fin en sí mismo. La institucionalización de esta idea se puede observar en las declaraciones de derechos humanos, civiles y sociales, que reconocen a los individuos como iguales y autónomos \citep{cortois2018}. En América Latina, este tipo de individualismo ha gozado de una importante valorización de los derechos humanos tras las dictaduras del siglo XX \citep{araujo2020a}. En Chile, además, se podría observar en las aspiraciones por la democratización y horizontalización de lazo social, así como en las demandas por dignidad \citep{araujo2012}.
 
-Si cada una de estas variantes introducidas se puede relacionar con las dos vertientes de la \emph{doble revolución} descrita por Eric Hobsbawm, Eva Illouz \citeyearpar{illouz2020} introduce una tercera que aconteció en el plano emocional y en la esfera privada. Se trata de un cambio cultural del que emerge el individualismo expresivo, en el que la acción social se entiende como un medio para la autoexpresión auténtica del yo \citep{cortois2018}. Opera, así, en el ámbito del amor, la sexualidad, la identidad, las intimidad y la familia. Se distingue del individualismo utilitario en que, pese a que ambos están dirigidos hacia el propio individuo, el individualismo expresivo carece del carácter instrumental y estratégico del utilitarismo. Aunque en ese sentido podría acercarse al individualismo moral, la diferencia fundamental es que mientras este pone énfasis en la igualdad entre individuos (``todos los humanos nacen libres e iguales''), el expresivo le da relieve a la diferencia (particularmente, en la autenticidad y unicidad).
+Si cada una de estas variantes introducidas se puede relacionar con las dos vertientes de la \emph{doble revolución} descrita por Eric Hobsbawm, Eva Illouz \citeyearpar{illouz2020} introduce una tercera que aconteció en el plano emocional y en la esfera privada. Se trata de un cambio cultural del que emerge el individualismo expresivo, en el que la acción social se entiende como un medio para la expresión auténtica del yo \citep{cortois2018}. Opera, así, en el ámbito del amor, la sexualidad, la identidad, la intimidad y la familia.
+
+Se distingue del individualismo utilitario en que, pese a que ambos están dirigidos hacia el propio individuo, el individualismo expresivo carece del carácter instrumental y estratégico del utilitarismo. Aunque en ese sentido podría acercarse al individualismo moral, la diferencia fundamental es que mientras este pone énfasis en la igualdad entre individuos (``todos los humanos nacen libres e iguales''), operando fundamentalmente en la esfera pública de la política. El individualismo expresivo le da mayor relieve a la diferencia, valorando la autenticidad la unicidad, siendo propio de la esfera privada de las emociones, la sexualidad y la identidad.
 
 \hypertarget{autoconcepciones-del-individuo}{%
-\subsubsection{(Auto)concepciones del individuo}\label{autoconcepciones-del-individuo}}
+\subsubsection{(Auto)concepciones del individuo:}\label{autoconcepciones-del-individuo}}
 
-Esta dimensión aborda las diversas concepciones en torno a la que se pueden definir a las que se pueden definir las identidades de los individuos, ya sea como uno prexistente a sus relaciones sociales -- como ocurre bajo el modelo del individualismo institucional --, o bien como parte de sus relaciones sociales o grupos a los que pertenece \citep{brewer2007, martuccelli2018}.
+Esta dimensión aborda las diversas concepciones en torno a las que se pueden definir las identidades de los individuos en relación a sus grupos de referencia \citep{brewer2007}.
 
-Si bien la concepción de un individuo independiente se ha considerado como propio de las culturas individualistas \citep{benavides2020, cross2011}, tal idea ha sido problematizada teóricamente \citep{voronov2002} y empíricamente \citep{benavides2020, kolstad2009}. Esto, junto a a la persistencia de los llamados valores asiáticos en esas sociedad, que conceptualizan al individuo como inseperable de sus lazos sociales \citep{zhai2022}, y la conceptualización de un híper-actor relacional en la sociedad chilena \citep{araujo2020}, sugiera la posibilidad de individualismos que difieren de las concepciones del individuo atomizado.
+Si bien la concepción de un individuo independiente se ha considerado como propio de las culturas individualistas \citep{benavides2020, cross2011}, tal idea ha sido problematizada teórica \citep{voronov2002} y empíricamente \citep{benavides2020, kolstad2009}. Esto, junto a la persistencia de los llamados valores asiáticos en esas sociedades, que conceptualizan al individuo como inseparable de sus lazos sociales \citep{zhai2022}, y la conceptualización de un híper-actor relacional en la sociedad chilena \citep{araujo2020}, sugiere la posibilidad de individualismos que difieren de las concepciones del individuo atomizado.
 
-Así, además de las autoconcepciones independientes se podrían identificar, por un lado, concepciones relaciones y concepciones colectivas \citep{brewer2007}. En las primeras, la identidad del individuo se define por sus relaciones cercanas, tales como la familia o los amigos. En las segundas, en tanto, es la identificaciones con grupos sociales más abstractos -- esto es, grupos nacionales, regionales, étnicos o religiosos -- lo que define a la identidad individual \citep{brewer2007}
+Así, además de las autoconcepciones independientes se podrían identificar concepciones relacionales y concepciones colectivas \citep{brewer2007}. En las primeras, la identidad del individuo se define por sus relaciones cercanas, tales como la familia o los amigos. En las segundas, en tanto, es la pertenencia con colectivos sociales más abstractos -- esto es, grupos nacionales, regionales, étnicos o religiosos -- lo que define a la identidad individual \citep{brewer2007}
 
 \hypertarget{valores-e-imperativos}{%
-\subsubsection{Valores e Imperativos}\label{valores-e-imperativos}}
+\subsubsection{Valores e Imperativos:}\label{valores-e-imperativos}}
 
 Esta dimensión se refiere a la importancia relativa que se le otorga en una sociedad a diversos valores e imperativos individuales y colectivos \citep{brewer2007}, los cuales son producidos por procesos sociohistóricos de individuación \citep{martuccelli2018}. Bajo el individualismo institucional, el principal valor para el individuo es la autonomía \citep{martuccelli2010}. Esto se realiza mediante un entramado institucional \citep{martuccelli2018} que ``formula amablemente a cada uno que se constituya a sí mismo en individuo, que planifique su vida, diseñe y obre y asuma la responsabilidad en caso de fracaso'' \citep[p.~59]{robles2001}. Es, pues, una individuación reflexiva bajo la que los individuos se constituyen bajo el imperativo de ejercer control sobre sus destinos y tomar decisiones de manera autónoma \citep{silvapalacios2015}, de ahí que su imperativo principal sea ``vive tu vida como quieras'' \citep{robles2001}
 
-Sin embargo, también se han planteado visiones críticas a esta concepción, particularmente desde América Latina \citep{araujo2012, robles2001}. No toda individuación sería reflexiva, ya que muchos individuos podrían experimentarla de forma delegativa, como una imposición \citep{silvapalacios2015}; no como un mundo de posibilidades, sino como lleno de incertidumbres. Los individuos, de tal modo, deben enfrentar las inseguridades ontológicas de la vida social a partir de sus propias habilidades bajo el imperativo de ``arreglátelas como puedas'' \citep{araujo2014, robles2001}. Frente a esto, la valorización de la autonomía se vería desplazada por la búsqueda de seguridad como valor principal de esta forma de individuación \citep{silvapalacios2015}
-
-\hypertarget{el-individualismo-chileno}{%
-\section{El Individualismo chileno}\label{el-individualismo-chileno}}
-
-Se considera que no se cuentan con antecedentes empíricos suficientes como para establecer una hipótesis sobre los diversos perfiles de individualismo que pueden aparecer en la sociedad chilena. Sin embargo, teóricamente es posible inferir que el modelo predominante sería el del individualismo agéntico \citep{araujo2014}. En función a las dimensiones definidas, este se caracterizaría por: i) una alta legitimidad de la individualidad \citep{martuccelli2018}, la que sin embargo podría ser menor en la esfera utilitaria como se podría extraer de la posición ambigua de los chilenas sobre acerca del oportunismo \citep{araujo2014} y el consumo \citep{araujo2012}; ii) Altos niveles de interdependencia relacional y grupal, dado el carácter relacional del individualismo chileno \citep{araujo2014}, pero con niveles igualmente altos de concepciones independientes \citep{benavides2020, kolstad2009}; iii) El desplazamiento de la autonomía como valor principal en favor de la búsqueda de seguridad, dado el énfasis en las destrezas personales de lo individuos como medio para superar las inseguridad ontológicas que deben enfrentar \citep{araujo2020a, robles2001}
+Sin embargo, también se han planteado visiones críticas a esta concepción, particularmente desde América Latina \citep{araujo2012, robles2001}. No toda individuación sería reflexiva, ya que muchos individuos podrían experimentarla de forma delegativa, como una imposición \citep{silvapalacios2015}; no como un mundo de posibilidades, sino como uno lleno de incertidumbres. Los individuos, de tal modo, deben enfrentar las inseguridades ontológicas de la vida social a partir de sus propias habilidades bajo el imperativo de ``arréglatelas como puedas'' \citep{araujo2014, robles2001}. Frente a esto, la valorización de la autonomía se vería desplazada por la búsqueda de seguridad como valor principal de esta forma de individuación \citep{silvapalacios2015}
 
 \hypertarget{estrategia-metodoluxf3gica}{%
 \chapter{Estrategia Metodológica}\label{estrategia-metodoluxf3gica}}
@@ -412,138 +404,215 @@ Se considera que no se cuentan con antecedentes empíricos suficientes como para
 \hypertarget{muestra}{%
 \subsection{Muestra}\label{muestra}}
 
+\FloatBarrier
+
 Se utilizarán datos de la muestra chilena de la séptima ola de la Encuesta Mundial de Valores, la más reciente a la fecha. El trabajo de campo se realizó entre enero y febrero del 2018, con una muestra de 1.000 personas mayores de 18 años. Estas fueron seleccionadas mediante un muestreo multietápico de 3 niveles y cuenta con representación nacional, así como de zonas urbanas y rurales \citep{haerpfer2020}. En la tabla 3.1 se resumen algunas de las variables de caracterización principales de la base de datos.
 
-\begin{table}
+\begin{table}[h]
 
 \caption{\label{tab:unnamed-chunk-5}Resumen muestra}
-\centering
 \begin{tabu} to \linewidth {>{\centering}X>{\centering}X>{\centering}X}
 \toprule
 \multicolumn{1}{c}{Indicador} & \multicolumn{1}{c}{n} & \multicolumn{1}{c}{Porcentaje}\\
 \midrule
-N & 1000 & 100.0\\
+N & 1000 & 100,0\\
 \addlinespace[0.3em]
 \multicolumn{3}{l}{\textbf{Sexo}}\\
-\hspace{1em}Hombre & 474 & 47.4\\
-\hspace{1em}Mujer & 526 & 52.6\\
+\hspace{1em}Hombre & 474 & 47,4\\
+\hspace{1em}Mujer & 526 & 52,6\\
 \addlinespace[0.3em]
 \multicolumn{3}{l}{\textbf{Edad}}\\
-\hspace{1em}18 a 29 años & 77 & 16.2\\
-\hspace{1em}30 a 49 años & 213 & 44.9\\
-\hspace{1em}Más de 50 años & 184 & 38.8\\
+\hspace{1em}18 a 29 años & 77 & 16,2\\
+\hspace{1em}30 a 49 años & 213 & 44,9\\
+\hspace{1em}Más de 50 años & 184 & 38,8\\
 \addlinespace[0.3em]
 \multicolumn{3}{l}{\textbf{Zona}}\\
-\hspace{1em}Urbano & 864 & 86.4\\
-\hspace{1em}Rural & 136 & 13.6\\
+\hspace{1em}Urbano & 864 & 86,4\\
+\hspace{1em}Rural & 136 & 13,6\\
 \addlinespace[0.3em]
 \multicolumn{3}{l}{\textbf{Nivel Educacional}}\\
-\hspace{1em}Básico & 36 & 7.6\\
-\hspace{1em}Medio & 263 & 55.5\\
-\hspace{1em}Superior & 175 & 36.9\\
+\hspace{1em}Básico & 36 & 7,6\\
+\hspace{1em}Medio & 263 & 55,5\\
+\hspace{1em}Superior & 175 & 36,9\\
 \addlinespace[0.3em]
 \multicolumn{3}{l}{\textbf{Religión}}\\
-\hspace{1em}Católica & 294 & 62.0\\
-\hspace{1em}Evangélica & 25 & 5.3\\
-\hspace{1em}Ninguna & 125 & 26.4\\
-\hspace{1em}Otra & 30 & 6.3\\
+\hspace{1em}Católica & 294 & 62,0\\
+\hspace{1em}Evangélica & 25 & 5,3\\
+\hspace{1em}Ninguna & 125 & 26,4\\
+\hspace{1em}Otra & 30 & 6,3\\
 \bottomrule
 \multicolumn{3}{l}{\rule{0pt}{1em}\textit{Nota.} Tabla basada en Encuesta Mundial de Valores 2018 (Haerpfer et al., 2020)}\\
 \end{tabu}
 \end{table}
 
+La selección de esta base de datos se justifica en que permite contar con una muestra representativa a nivel nacional con indicadores relevantes sobre valores, creencias y normas sociales, políticas y económicas de la población. A partir de estos, pues, será posible construir tanto un modelo que identifique perfiles de individualismo, como un indicador que mida apoyo a la democracia delegativa.
+
+Por otro lado, la Encuesta Mundial de Valores presenta la ventaja de ser un instrumento periódico y transnacional. Aunque esto se escapa de los propósitos de esta investigación, esto permitiría futuros estudios que comparen los hallazgos aquí obtenidos tanto con otros países como olas anteriores recogidas en Chile.
+
 \hypertarget{variable-dependiente}{%
 \subsection{Variable dependiente}\label{variable-dependiente}}
 
-La variable dependiente es apoyo a la democracia delegativa, la que se medirá a través de un índice sumativo de dos ítems: i) Valoración de tener un líder fuerte que no se preocupe por el congreso y las elecciones; ii) Valoración de tener expertos, no un gobierno, tomando decisiones de acuerdo a lo que ellos cree que es mejor para el país. La primera pregunta ha sido utilizada con anterioridad para medir el apoyo a la democracia delegativa en Asia \citep{kang2018a}, mientras que el segundo se integra considerando la impronta tecnocrática de la democracia delegativa \citep{odonnell1994}.
+La variable dependiente es apoyo a la democracia delegativa, la que se medirá a través de un índice sumativo de dos ítems: i) Valoración de tener un líder fuerte que no se preocupe por el congreso y las elecciones; ii) Valoración de tener expertos, no un gobierno, tomando decisiones de acuerdo a lo que ellos creen que es mejor para el país. La primera pregunta ha sido utilizada con anterioridad para medir el apoyo a la democracia delegativa en Asia \citep{kang2018a}, mientras que el segundo se integra considerando la impronta tecnocrática de la democracia delegativa \citep{odonnell1994}.
 
-La consistencia interna de este indicador, medio a través del \(\alpha\) de Cronbach es de 0,65. Si bien esto está por debajo de la convención que considera valores sobre 0,7 como aceptables, no debería tomarse como una limitación para su uso cuando hay razones teóricas de peso que permitan argumentar que ambos ítems miden un único constructo \citep{schmitt1996}.
+Cada ítem cuenta con 4 categorías de respuestas (1. Muy bueno; 2. Bueno; 3. Malo; 4. Muy Malo). Para facilitar el análisis, éstas se recodificarán en sentido opuesto, luego se sumarán y se dividirán por 2. De tal modo, se construirá un índice con valores que van del 1 al 4, donde 1 expresa un bajo apoyo a la democracia delegativa y 4 un alto apoyo.
+
+La consistencia interna de este indicador, medido a través del \(\alpha\) de Cronbach es de 0,65. Si bien esto está por debajo de la convención que considera valores sobre 0,7 como aceptables, no debería tomarse como una limitación para su uso cuando hay razones teóricas de peso que permitan argumentar que ambos ítems miden un único constructo \citep{schmitt1996}.
 
 \hypertarget{variable-independiente}{%
 \subsection{Variable independiente}\label{variable-independiente}}
 
-La variable independiente para esta investigación es el individualismo, que aquí se define como una variable latente y categórica que puede medirse a través de un conjunto de indicadores operacionalizados a partir de las dimensiones y subdimensiones definidas en el marco teórico. En la table 3.1. se resumen los indicadores seleccionados.
+La variable independiente para esta investigación es el individualismo, que aquí se define como una variable latente y categórica que puede medirse a través de un conjunto de indicadores observados. De tal modo, se utilizará un análisis de clases latentes (LCA) para identificar los perfiles de individualismo en la sociedad chilena. Este es un modelo de variables latentes para cuando estas son categóricas en lugar de continuas, lo que permite identificar diferencias cualitativas y principios de organización dentro de la población \citep{collins2010}.
 
-\begin{table}
+El uso de métodos cuantitativos en una investigación con una perspectiva teórica como la que aquí se ha planteado -- la individualización y la sociología del individuo -- puede resultar problemático, pues este es un campo donde proliferan principalmente lo estudios cualitativos. Frente a esto, y reconociendo la profundidad que tales aproximaciones le han dado a la investigación del individuo en Chile, el análisis de clases latentes puede ser una herramienta importante para complementar el conocimiento producido sobre el individualismo en Chile.
+
+Mientras las técnicas cuantitativas utilizadas por casi la totalidad de los estudios desde la psicología cultural se concentran en encontrar relaciones entre el individualismo (y el colectivismo) con otras variables, el análisis de clases latentes ofrece una \emph{aproximación orientada a la persona} \citep{collins2010}. Esta forma de abordar el análisis estadístico se diferencia en que no busca establecer relación entre variables, sino que se propone dar con resultados que sean interpretables a nivel del individuo y que sean informativos sobre los patrones generales en que éstos se comportan \citep{bergman2015}. El análisis de clases latentes, de tal modo, ofrece la oportunidad de realizar una sociología a nivel del individuo, a partir de quienes -- a través de sus percepciones, creencias y experiencias -- sería posible mapear los procesos estructurales de individuación en Chile. De tal modo, sería posible obtener una versión menos unívoca del individualismo chileno que la planteada por Araujo y Martuccelli, realizando una tipología que permita identificar divergencias y difracciones de este fenómeno en la sociedad chilena.
+
+Una técnica similar al LCA que permitiría establecer perfiles de individualismo es el análisis de conglomerados. La diferencia entre ambos radica en que este último es un técnica determinística, mientras que el análisis de clases latentes es una técnica probabilística -- esto es, el modelo estima la probabilidad de que un individuo pertenezca a una o a otra categoría. La ventaja de esta aproximación es que permite conocer el error asociado al modelo estimado \citep{magidson2002}. Magidson y Vermunt \citeyearpar{magidson2002} enumeran otras ventajas del LCA por sobre el análisis de conglomerados, como tener mejores parámetros para determinar el número de clases o predecir con mayor precisión la membresía de los casos.
+
+Tomando todo lo anterior en consideración, se seleccionó un set de indicadores operacionalizadas a partir de las definiciones teóricas antes planteadas. Se debe considerar que el LCA requiera que los indicadores sean categóricos, por lo que se debió proceder a la recodificación de algunos ítems. En la tabla 3.2. se resumen los indicadores seleccionados.
+
+\hypertarget{legitimidad-de-la-individualidad.}{%
+\paragraph{Legitimidad de la individualidad.}\label{legitimidad-de-la-individualidad.}}
+
+Se medirá a través de 3 subdimensiones: Legitimidad del individualismo utilitario, legitimidad del individualismo moral y legitimidad del individualismo expresivo, siguiendo las distinciones antes introducidos \citep{cortois2018}.
+
+Para la \textbf{legitimidad del individualismo utilitario} se tomarán indicadores que apuntan a medir la legitimidad de acciones estratégicas que permitan obtener beneficios personales, incluso si éstas están en contra de las normas, tales como evadir en el transporte público o dar información falsa para recibir beneficios sociales. Lo que se pone énfasis es, pues, la legitimidad de poner los fines por sobre los medios.
+
+Se incluye, además, un indicador sobre la valoración de la competencia. Usualmente, este tipo de preguntas se ha utilizado como una medición de individualismo vertical \citep{oyserman2002}. Con todo, la competencia es también una de las principales formas en que el individualismo utilitario se ha institucionalizado en sociedades modernas \citep{cortois2018}. Las personas que valoran más la competencia, pues, serían más favorables a legitimar desigualdades individuales mediante la maximización de los recursos personales.
+
+\begin{table}[h]
 
 \caption{\label{tab:unnamed-chunk-7}Resumen indicadores}
 \centering
-\begin{tabular}[t]{>{\centering\arraybackslash}p{5cm}>{\raggedright\arraybackslash}p{10cm}}
+\begin{tabular}[t]{>{\centering\arraybackslash}p{3cm}>{\centering\arraybackslash}p{7cm}>{\raggedright\arraybackslash}p{5cm}}
 \toprule
-\multicolumn{1}{c}{Dimensión} & \multicolumn{1}{c}{Indicadores}\\
+\multicolumn{1}{c}{Dimensión} & \multicolumn{1}{c}{Indicadores} & \multicolumn{1}{c}{Categorías}\\
 \midrule
 \addlinespace[0.3em]
-\multicolumn{2}{l}{\textbf{Legitimidad de la individualidad}}\\
- & Valoración de la competencia\\
+\multicolumn{3}{l}{\textbf{Legitimidad de la individualidad}}\\
+ &  & 1. Baja valoración\\
 
- & Justificación de evasión transporte público\\
 
-\multirow{-3}{5cm}{\centering\arraybackslash \hspace{1em}Legitimidad del individualismo utilitario} & Justificación de aceptar ayudas sociales sin necesidad\\
-\cmidrule{1-2}
- & Importancia de la igualdad de ingresos\\
+ & \multirow{-2}{7cm}{\centering\arraybackslash Valoración de la competencia} & 2. Alta valoración\\
 
- & Importancia de la igualdad de género\\
 
-\multirow{-3}{5cm}{\centering\arraybackslash \hspace{1em}Legitimidad del individualismo moral} & Importancia del respeto a los derechos civiles\\
-\cmidrule{1-2}
- & Justificación de la homosexualidad\\
+ &  & 1. Baja justificación\\
 
- & Justificación del divorcio\\
 
-\multirow{-3}{5cm}{\centering\arraybackslash \hspace{1em}Legitimidad del individualismo expresivo} & Justificación del sexo premarital\\
-\cmidrule{1-2}
+ & \multirow{-2}{7cm}{\centering\arraybackslash Justificación de evasión transporte público} & 2. Alta justificación\\
+
+
+ &  & 1. Baja justificación\\
+
+
+\multirow{-6}{3cm}{\centering\arraybackslash Legitimidad individualismo utilitario} & \multirow{-2}{7cm}{\centering\arraybackslash Justificación de aceptar ayudas sociales sin necesidad} & 2. Alta justificación\\
+
+\cmidrule{1-3}
+ &  & 1. Baja importancia\\
+
+
+ & \multirow{-2}{7cm}{\centering\arraybackslash Importancia de la igualdad de ingresos} & 2. Alta importancia\\
+
+
+ &  & 1. Baja importancia\\
+
+
+ & \multirow{-2}{7cm}{\centering\arraybackslash Importancia de la igualdad de género} & 2. Alta importancia\\
+
+
+ &  & 1. Baja importancia\\
+
+
+\multirow{-6}{3cm}{\centering\arraybackslash Legitimidad individualismo moral} & \multirow{-2}{7cm}{\centering\arraybackslash Importancia del respeto a los derechos civiles} & 2. Alta importancia\\
+
+\cmidrule{1-3}
+ &  & 1. Baja justificación\\
+
+
+ & \multirow{-2}{7cm}{\centering\arraybackslash Justificación de la homosexualidad} & 2. Alta justificación\\
+
+
+ &  & 1. Baja justificación\\
+
+
+ & \multirow{-2}{7cm}{\centering\arraybackslash Justificación del divorcio} & 2. Alta justificación\\
+
+
+ &  & 1. Baja justificación\\
+
+
+\multirow{-6}{3cm}{\centering\arraybackslash Legitimidad individualismo expresivo} & \multirow{-2}{7cm}{\centering\arraybackslash Justificación del sexo premarital} & 2. Alta justificación\\
+
+\cmidrule{1-3}
 \addlinespace[0.3em]
-\multicolumn{2}{l}{\textbf{Concepciones del Individuo}}\\
- & Importancia de la independencia\\
+\multicolumn{3}{l}{\textbf{Concepciones del Individuo}}\\
+ &  & 1. Bajo acuerdo\\
 
- & Importancia de la imaginación\\
 
-\multirow{-3}{5cm}{\centering\arraybackslash \hspace{1em}Concepción Independiente} & Importancia de la perseverancia\\
-\cmidrule{1-2}
- & Importancia de la familia\\
+\multirow{-2}{3cm}{\centering\arraybackslash Concepción Independiente} & \multirow{-2}{7cm}{\centering\arraybackslash Las personas deben hacerse cargo de sí mismos} & 2. Alto acuerdo\\
 
- & Importancia de los amigos\\
+\cmidrule{1-3}
+ &  & 1. Muy en desacuerdo\\
 
-\multirow{-3}{5cm}{\centering\arraybackslash \hspace{1em}Concepción Relacional} & Importancia de hacer a los padres orgullosos\\
-\cmidrule{1-2}
- & Cercanía con pueblo o ciudad\\
 
- & Cercanía con la región\\
+ &  & 2. En desacuerdo\\
 
-\multirow{-3}{5cm}{\centering\arraybackslash \hspace{1em}Concepción Colectiva} & Cercanía con Chile\\
-\cmidrule{1-2}
+
+ &  & 3. De acuerdo\\
+
+
+\multirow{-4}{3cm}{\centering\arraybackslash Concepción Relacional} & \multirow{-4}{7cm}{\centering\arraybackslash Hacer orgullosos a los padres} & 4. Muy de acuerdo\\
+
+\cmidrule{1-3}
+ &  & 1. Nada cercano\\
+
+
+ &  & 2. No muy cercano\\
+
+
+ &  & 3. Cercano\\
+
+
+\multirow{-4}{3cm}{\centering\arraybackslash Concepción Colectiva} & \multirow{-4}{7cm}{\centering\arraybackslash Cercanía con Chile} & 4. Muy cercano\\
+
+\cmidrule{1-3}
 \addlinespace[0.3em]
-\multicolumn{2}{l}{\textbf{Valores e imperativos}}\\
-\hspace{1em}Valor principal & Considera más importante la seguridad o la libertad\\
+\multicolumn{3}{l}{\textbf{Valores e imperativos}}\\
+ &  & 1. La libertad\\
+
+
+\multirow{-2}{3cm}{\centering\arraybackslash Valor principal} & \multirow{-2}{7cm}{\centering\arraybackslash Considera más importante} & 2. La seguridad\\
 \bottomrule
 \end{tabular}
 \end{table}
 
-Le legitimidad de la individualidad se medirá a través de 3 subdimensiones: Legitimidad del individualismo utilitario, legitimidad del individualismo moral y legitimidad del individualismo expresivo.
+\FloatBarrier
 
-\begin{itemize}
-\tightlist
-\item
-  Para la legitimidad del individualismo utilitario se tomarán indicadores que apuntan a medir la legitimidad de acciones estratégicas que permitan obtener beneficios personales, incluso si éstas están en contra de las normas.
-\item
-  Para la legitimidad del individualismo moral se tomarán indicadores sobre la importancia de la igualdad de ingresos, la igualdad de género y los derechos civiles en una democracia. Con éstos, se pretende recoger la importancia que ha adquirido la igualdad de trato y los derechos humanos en la sociedad chilena \citep{araujo2012, araujo2020a}. Sin duda, se podría argumentar que tomar estos indicadores podría generar problemas de endogeneidad con la variables dependiente, que también se refiere a aspectos sobre la democracia. Sin embargo, se debe considerar que la conceptualización aquí trabajada no asume que una relación intrínseca entre liberalismo-democracia e individualismo. Es más, la apuesta es precisamente que que hay modelos de individualismo en que tal relación no existe o es contradictoria.
-\item
-  Para legitimidad del individualismo expresivo se tomarán indicadores sobre la legitimidad de prácticas individualizadas en las esferas de la sexualidad y del amor.
-\end{itemize}
+Para la \textbf{legitimidad del individualismo moral} se tomarán indicadores sobre la importancia de la igualdad de ingresos, la igualdad de género y los derechos civiles en una democracia. Con éstos, se pretende recoger la importancia que ha adquirido la igualdad de trato y los derechos humanos en la sociedad chilena \citep{araujo2012, araujo2020a}. Sin duda, se podría argumentar que tomar estos indicadores podría generar problemas de endogeneidad con la variable dependiente, que también se refiere a aspectos sobre la democracia. Sin embargo, se debe considerar que la conceptualización aquí trabajada no asume que una relación intrínseca entre liberalismo-democracia e individualismo. Es más, la apuesta es precisamente que hay modelos de individualismo en que tal relación no existe o es contradictoria.
 
-La dimensión de concepciones del individuo se construirá a partir de las 3 subdimensiones definidas por Brewer \citeyearpar{brewer2007}: concepción independiente, concepción relacional, y concepción colectiva.
+Para \textbf{legitimidad del individualismo expresivo} se tomarán indicadores sobre la legitimidad de prácticas individualizadas en las esferas de la sexualidad y del amor. Si bien el individualismo expresivo se ha expandido a otras áreas de la sociedad, siguiendo la tesis de la ética de la autenticidad de Charles Taylor \citep{gauthier2021}, se toman estos indicadores relacionados a la homosexualidad, el divorcio y el sexopremarital, en cuanto es en el amor y en la sexualidad donde encuentra su cristalizaciones más puras. Bajo la égida del individualismo expresivo, pues, el matrimonio y los roles sexuales dejan de estar vinculados a rígidos roles estructurales para pasar a ser el terreno de la autenticidad y la autoexpresión.
 
-\begin{itemize}
-\tightlist
-\item
-  Para autoncepción independiente se mide a través de ítems sobre la importancia de transmitir a futuras generaciones cualidades como la independencia, la imaginación y la perseverancia.
-\item
-  Para la autoncepción relacional se tomarán ítems sobre la importan para las personas de sus relaciones más cercanas, particularmente la familia, los padres y los amigos.
-\item
-  Para la autoconcepción colectiva se tomarán ítems sobre la identificación de las personas con su país, su región y su comuna.
-\end{itemize}
+Los 9 ítems seleccionados corresponden a escalas del 1 al 10. Por ello, en función a lo antes mencionados y para hacer el análisis más claro, se optó por dicotomizar estas variables. De tal modo, valores bajo 5 fueron considerados como una baja justificación de las acciones señalados, mientras valores sobre 5 se entienden como una alta justificación\footnote{La única excepción es el indicador de competencia, donde los valores se encontraban invertidos. Para facilitar el análisis, se recodificó de modo que 2 indicadora una mayor valoración de la competencia, y 1 una menor.}.
 
-Por último, la dimensión de valores e imperativos se medirá a partir de un indicador único bajo el supuesto de que personas que le dan una mayor importancia relativa a la libertad por sobre la seguridad se corresponden a una individuación reflexiva (y que la autonomía es su valor principal), mientras que en el caso contrario se relacionan más bien con una individuación delegativa (y que la búsqueda por seguridad desplaza a la autonomía como valor principal).
+\hypertarget{concepciones-del-individuo.}{%
+\paragraph{Concepciones del individuo.}\label{concepciones-del-individuo.}}
+
+Se construirá a partir de las 3 subdimensiones definidas por Brewer y Chen \citeyearpar{brewer2007}: concepción independiente, concepción relacional, y concepción colectiva.
+
+La \textbf{concepción independiente} se medirá a través del grado de acuerdo con la frase ``las personas deberían asumir más responsabilidad de sí mismas''. Al igual que indicadores de legitimidad, este ítem corresponde a una escala del 1 al 10, que fue recodificada con los mismos criterios antes mencionados.
+
+La \textbf{concepción relacional} se medirá a través del grado de acuerdo con ``una de mis metas en la vida ha sido que mis padres estén orgullosos de mí''. La familia es, por supuesto, solo una de las posibles relaciones inmediatas a partir de la que los individuos pueden definir su identidad. Por ejemplo, las amistades, los vecinos, los compañeros de trabajo o de escuela, o miembros de una iglesia podrían considerarse en esta subdimensión. Con todo, ante las limitaciones de la base de datos, y considerando que la familia es posiblemente la principal instancia de sociabilidad en la sociedad chilena \citep{araujo2012}, se argumenta que el indicador propuesto es una buena aproximaciones para medir la interdependencia relacional.
+
+El indicador consiste en una escala Likert de 4 categorías, donde 1 indica estar muy de acuerdo con la frase, y 4 muy en desacuerdo. Para facilitar su interpretación, se invirtieron las categorías de modo que valores mayores indiquen un mayor acuerdo con la frase propuesta.
+
+La \textbf{concepción colectiva} se medirá a través de la cercanía que se siente con el país. Nuevamente, se podría advertir que la identidad nacional es tan solo una de las posibles identidades colectivas que podrían incluir en esta subdimensión. Entre éstas, podrían contarse identidades étnicas, religiosas, de clase o territoriales, entre otras. Sin embargo, es relevante señalar que la Encuesta Mundial de Valores propociona daots únicamente sobre identidad regional y comunal. Cabe mencionar que, en el contexto chileno, la identidad regional y la nacional están estrechamente relacionadas \citep{zuniga2010}, por lo que integrar ambas en el modelo podría resultar redundante.
+
+El indicador corresponde a una escala Likert de 4 categorías, donde 1 indica una alta cercanía con el país y 4 una baja cercanía. Nuevamente, para facilitar el análisis, se invirtieron las categorías de modo que valores mayores indiquen una mayor cercanía.
+
+\hypertarget{valores-e-imperativos.}{%
+\paragraph{Valores e Imperativos.}\label{valores-e-imperativos.}}
+
+Posiblmente, esta sea la dimensión de mayor complejidad teórica y donde se requiere el mayor cuidado para su operacionalización. Afortunadamente, la Encuesta Mundial de Valores ofrece una solución adecuada. El indicador seleccionado consiste en la pregunta \emph{La mayoría de las personas consideran que tanto la libertad como la seguridad son importantes, pero si tuviera que elegir una, ¿cuál consideras que es más importante?}. El indicador ofrece una forma simple para constatar si la autonomía es el principal valor para los individuos, o si esta se ve desplazada por el deseo de seguridad.
 
 \hypertarget{variables-de-control}{%
 \subsection{Variables de control}\label{variables-de-control}}
@@ -556,18 +625,18 @@ Se sumarán variables de control principalmente a características sociodemográ
 \hypertarget{anuxe1lisis-de-clases-latentes}{%
 \subsection{Análisis de clases latentes}\label{anuxe1lisis-de-clases-latentes}}
 
-Para la construcción de los perfiles de individualismo se utilizará la técnica de análisis de clases latentes. Este es un modelo de variables latentes para cunado estas son categóricas en lugar de continuas, lo que permite identificar diferencias cualitativas y principios de organización dentro de la población \citep{collins2010}.
-
-El uso de métodos cuantitativos en una investigación con una perspectiva teórica como la que aquí se ha planteado -- la individualización y la sociología del individuo -- puede resultar problemático, pues este es un campo donde proliferan principalmente lo estudios cualitativos. Frente a esto, y reconociendo la profundidad que tales aproximaciones le han dado a la investigación del individuo en Chile, el análisis de clases latentes puede ser una herramienta importante para complementar el conocimientos producido sobre el individualismo en Chile.
-
-Mientras las técnicas cuantitativas utilizadas por casi la totalidad de los estudios desde la psicología cultural se concentran en encontrar relaciones entre el individualismo (y el colectivismo) con otras variables, el análisis de clases latentes ofrece una \emph{aproximación orientada a la persona} \citep{collins2010}. Esta forma de abordar el análisis estadístico se diferencia en que no busca establecer relación entre variables, sino que se propone dar con resultados que sean interpretables a nivel del individuo y que sean informativos sobre los patrones generales en que éstos se comportan \citep{bergman2015}. El análisis de clases latentes, de tal modo, ofrece la oportunidad de realizar una sociología a nivel del individuo, a partir de quienes -- a través de sus percepciones, creencias y experiencias -- sería posible mapear las difracciones de los procesos estructurales de individuación en Chile.
-
-Es importante tener en cuenta que tanto las variables latentes como las observadas en este modelo son categóricas. Por lo tanto, se deben tomar decisiones sobre la redocidicación de los indicadores propuestos. En general, para simplificar el análisis y evitar la dispersión (\emph{sparseness}) de los datos, es recomendable dictomizar las variables respecto a la media.
-
-Una forma de entender esta decisión es pensar que el análisis de clases latentes organiza la información en una tabla de contigencia con \(W\) celdas. En general, se busca que la relación entre el tamaño muestra y el número de celdas (\(N/W\)) sea lo más alto posible \citep{collins2010}. Del mismo modo, al igual que al analizar una tabla de contigencia, se quiere evitar que haya celdas vacías o con pocos casos. Al dicotomizar respecto a la media, se lograrían ambos objetivos.
+El análisis de clases latentes se llevará a cabo mediante el paquete \textbf{poLCA} (\textbf{po}lytomous Variable \textbf{L}atent \textbf{C}lass \textbf{A}nalysis) en R. \textbf{polCA} permite especificar modelos de clases latentes de forma eficiente a partir de pocas líneas de código, y entrega información relevante sobre el tamaño de cada clase latente, la probabilidades posteriores de membresía y criterios para determinar el ajuste del modelo -- como AIC, BIC, entre otros \citep{linzer2011}.
 
 \hypertarget{modelo-de-regresiuxf3n-lineal}{%
 \subsection{Modelo de regresión lineal}\label{modelo-de-regresiuxf3n-lineal}}
+
+En segunda instancia, se realizará un modelo de regresión lineal para establecer la relación entre los perfiles de individualismo y el apoyo a la democracia delegativa. Para esto, se construirá una nueva variable categórica de individualismo, asignando a cada caso una categoría (esto es, un perfil de individualismo) en función de las probabilidades modales estimadas por el modelo de clases latentes.
+
+Suponiendo, pues, que la \(clase_1\) se tomaría como categoría de referencia, el modelo quedaría definido por la siguiente fórmula:
+
+\[Apoyo Democracia Delegativa = \alpha + \beta_1Clase_2 + \beta_2Clase_3 + ... + \beta_kClase_j \]
+
+Esta no es una solución ideal, dado el error asociado a la condición probabilística de la técnica \citep{collins2010}, pero al menos es una salida pragmática que permitiría arrojar luces sobre la asociación y responder la pregunta de investigación.
 
 \hypertarget{anuxe1lisis}{%
 \chapter{Análisis}\label{anuxe1lisis}}
@@ -581,16 +650,17 @@ Una forma de entender esta decisión es pensar que el análisis de clases latent
 \hypertarget{conclusiones}{%
 \chapter{Conclusiones}\label{conclusiones}}
 
-\hypertarget{bibliografuxeda}{%
-\chapter{Bibliografía}\label{bibliografuxeda}}
-
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%% Bibliography                              %%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \addtocontents{toc}{\vspace{.5\baselineskip}}
-% \cleardoublepage
-% \phantomsection
-% \addcontentsline{toc}{chapter}{\protect\numberline{}{Bibliography}}
+%\addtocontents{toc}{\vspace{.9\baselineskip}}
+
+\cleardoublepage
+\pagestyle{fancyplain}
+\fancyhf{}
+	 \fancyhead[RE]{\slshape Bibliografía}
+\phantomsection
+\addcontentsline{toc}{chapter}{{Bibliografía}}
 \bibliography{tesis}
 
 %% All books from our library (SfS) are already in a BiBTeX file

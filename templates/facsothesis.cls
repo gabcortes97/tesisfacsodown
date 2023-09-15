@@ -107,13 +107,13 @@
 %  \fancyhead[LO]{\slshape \rightmark}
 %	The above makes your headers in all caps. If you would like different headers, choose one of the following options (be sure to remove the % symbol from both the right and left headers):
 	 \fancyhead[RE]{\slshape \nouppercase \leftmark} % This makes the headers on the RIGHT side pages be italic and use lowercase With Capitals When Specified.
-	\fancyhead[RO]{\slshape \nouppercase \rightmark} % This does the same thing to the LEFT side pages
+	\fancyhead[LO]{\slshape \nouppercase \rightmark} % This does the same thing to the LEFT side pages
 	\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 %	or
 %	\fancyhead[RE]{\scshape \leftmark} % The RIGHT headers will be in small caps.
 %	\fancyhead[LO]{\scshape \rightmark} %  And so will the LEFT headers
-\fancyfoot[C]{\thepage}
-  \pagestyle{fancy}
+  \fancyfoot[C]{\thepage}
+
 
 % Psych majors: You do not need the following six lines, as it conflicts with apacite, so comment them out.
 %\let\oldthebibliography=\thebibliography
@@ -240,15 +240,15 @@
   \fontsize{12}{14}\selectfont
 }{\clearpage \if@restonecol\twocolumn\fi}%
 
-\newenvironment{preface}{%
-  \if@twocolumn
-    \@restonecoltrue\onecolumn
-  \else
-    \@restonecolfalse
-  \fi
-  \chapter*{Preface}
+\usepackage{geometry}
+
+\newenvironment{prefacio}{%
+  \newgeometry{left=10.5cm} % Adjust margins
+  \chapter*{}
   \fontsize{12}{14}\selectfont
-}{\clearpage \if@restonecol\twocolumn\fi}%
+  \begin{flushright}
+}{\end{flushright}\restoregeometry\clearpage}
+
 % End of CII add
 
 \newenvironment{abstract}{%
